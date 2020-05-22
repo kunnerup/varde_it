@@ -23,7 +23,7 @@ h3{
 
 h4{
     font-size: 1.5em;
-    colorvar(--darkestblue)
+    color: var(--darkestblue);
     font-family: headline;
 }
 
@@ -75,6 +75,11 @@ body {
     width: 200px;
 }
 
+.whitebutton:hover, .orangebutton:hover {
+    animation: buttonani 300ms;
+    animation-fill-mode: forwards;
+}
+
 /*ANIMATIONER*/
 @keyframes blink {
     0% { transform: scale(1); bottom: 180px;}
@@ -84,6 +89,13 @@ body {
     40% {transform: scale(1.5); bottom: 150px;}
     50% { transform: scale(1); bottom: 180px;}
     100% { transform: scale(1); bottom: 180px;}
+}
+
+@keyframes buttonani {
+    0% {transform: rotate(0.01turn)}
+    30% {transform: rotate(0turn)}
+    60%{transform: rotate(-0.01turn)}
+    100% {transform: rotate(0turn)}
 }
 
 /*NAVIGATION*/
