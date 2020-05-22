@@ -2,6 +2,7 @@
 :root {
     --lightblue: #2C4F78;
     --darkblue: #0B2848;
+    --darkestblue: #010D2D;
     --lightorange: #F39200;
     --darkorange: #F75C14;
     --whitetext: white;
@@ -33,7 +34,7 @@ body {
 /*NAVIGATION*/
 nav {
     height: 100px;
-    background: linear-gradient(var(--lightblue), #000C2C);
+    background: linear-gradient(var(--lightblue),var(--darkestblue));
 }
 
 nav img {
@@ -59,10 +60,38 @@ nav ul {
     float: right;
     padding: 0;
     margin: 0;
-    font-family: basic;
+    font-family: headline;
 }
 
 nav ul li {
     margin-right: 90px;
     font-size: 18px;
+}
+
+
+/*FORSIDE*/
+#landingpage{
+    height: calc(97.9vh - 80px);
+    width: 100%;
+    background: linear-gradient(var(--lightblue),var(--darkblue));
+}
+
+.socialmedia {
+    position: absolute;
+    bottom: 40px;
+    right: 120px;
+}
+
+.socialmedia img {
+    height: 50px;
+    padding: 20px;
+}
+
+.arrowdown{
+position: absolute;
+left: 50%;
+right: 50%;
+transform: translate(-50%);
+bottom: 180px;
+width: 100px;
 }
