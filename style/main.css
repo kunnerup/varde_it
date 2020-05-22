@@ -9,6 +9,30 @@
     --shadow: 6px 6px 10px black;
 }
 
+h2{
+    font-size: 3.5em;
+    color: var(--darkestblue);
+    font-family: basic;
+}
+
+h3{
+    font-size: 2.5em;
+    color: var(--darkestblue);
+    font-family: headline;
+}
+
+h4{
+    font-size: 1.5em;
+    colorvar(--darkestblue)
+    font-family: headline;
+}
+
+p {
+    color: var(--darkestblue);
+    font-size: 1.2em;
+    font-family: basic;
+}
+
 /*FONTE*/
 @font-face {
     font-family: basic;
@@ -29,6 +53,37 @@
 body {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+.orangebutton {
+    font-size: 1.5em;
+    padding: 15px 0 15px 0;
+    border: 1.5px white solid;
+    background-color: var(--lightorange);
+    color: white;
+    font-family: headline;
+    width: 200px;
+}
+.whitebutton {
+    font-size: 1.5em;
+    padding: 15px 0 15px 0;
+    border: 1.5px var(--lightorange) solid;
+    background-color: white;
+    color: var(--lightorange);
+    font-family: headline;
+    width: 200px;
+}
+
+/*ANIMATIONER*/
+@keyframes blink {
+    0% { transform: scale(1); bottom: 180px;}
+    10% {transform: scale(1); bottom: 180px;}
+    20% {transform: scale(1); bottom: 180px;}
+    30% {transform: scale(1.5); bottom: 150px;}
+    40% {transform: scale(1.5); bottom: 150px;}
+    50% { transform: scale(1); bottom: 180px;}
+    100% { transform: scale(1); bottom: 180px;}
 }
 
 /*NAVIGATION*/
@@ -72,8 +127,26 @@ nav ul li {
 /*FORSIDE*/
 #landingpage{
     height: calc(97.9vh - 80px);
+    min-height: 600px;
     width: 100%;
     background: linear-gradient(var(--lightblue),var(--darkblue));
+}
+
+#landingpage h2 {
+    position: absolute;
+    color: var(--lightorange);
+    top: 30%;
+    left: 8%
+}
+
+.cta_container {
+position: absolute;
+left: 8%;
+top: 55%;
+}
+
+.cta_container .whitebutton {
+    margin-left: 40px;
 }
 
 .socialmedia {
@@ -87,11 +160,16 @@ nav ul li {
     padding: 20px;
 }
 
+.socialmedia img:hover {
+    transform: scale(1.2);
+}
+
 .arrowdown{
 position: absolute;
 left: 50%;
 right: 50%;
 transform: translate(-50%);
 bottom: 180px;
-width: 100px;
+width: 50px;
+animation: blink 3300ms infinite;
 }
