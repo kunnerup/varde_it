@@ -1,0 +1,68 @@
+/*VARIABLER*/
+:root {
+    --lightblue: #2C4F78;
+    --darkblue: #0B2848;
+    --lightorange: #F39200;
+    --darkorange: #F75C14;
+    --whitetext: white;
+    --shadow: 6px 6px 10px black;
+}
+
+/*FONTE*/
+@font-face {
+    font-family: basic;
+    src: url(../fonts/FiraSans-Light.ttf);
+}
+
+@font-face {
+    font-family: headline;
+    src: url(../fonts/FiraSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: extraFat;
+    src: url(../fonts/FiraSans-Bold.ttf);
+}
+
+/*GENERAL*/
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/*NAVIGATION*/
+nav {
+    height: 100px;
+    background: linear-gradient(var(--lightblue), #000C2C);
+}
+
+nav img {
+    height: 80px;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--darkblue)
+}
+
+nav ul {
+    list-style: none;
+    background-color: var(--lightorange);
+    clip-path: polygon(7% 0, 100% 0%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(7% 0, 100% 0%, 100% 100%, 0 100%);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 65%;
+    height: 100px;
+    float: right;
+    padding: 0;
+    margin: 0;
+    font-family: basic;
+}
+
+nav ul li {
+    margin-right: 90px;
+    font-size: 18px;
+}

@@ -1,0 +1,11 @@
+# fjernelse af .HTML i url
+
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#HVis der ikke er en fil der hedder det angivne, skal den udlade regler
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
+#Her vises siden der har HTML i sig
+RewriteRule ^(.*)$ $1.html [NC,L]

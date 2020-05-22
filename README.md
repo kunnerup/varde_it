@@ -1,2 +1,0 @@
-# varde_it
-Eksamenscase
