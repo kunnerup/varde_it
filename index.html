@@ -10,25 +10,46 @@
 </head>
 <body>
     <nav>
+        <div id="burger" onclick="openMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
         <a href="/"><img src="images/Logo_white.png" alt="Harder&Køhler logo"></a>
-        <ul>
-            <li><a href="/">Hjem</a></li>
-            <li><a href="services.html">Ydelser</a></li>
+        <ul id="menu"> 
+            <li><a href="/"><span class="active">Hjem</span></a></li>
+            <li id="ydelser"><a href="services.html">Ydelser</a>
+                <ul class="dropdown">
+                    <a href="Private.html"><li>Privat</li></a>
+                    <a href="company.html"><li>Erhverv</li></a>
+                </ul>
+            </li>
             <li><a href="about.html">Om os</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li class="cta_contact"><a href="contact.html">Kontakt</a></li>
         </ul>
+
     </nav>
+
     <section id="landingpage">
 
         <h2>En hjælpende hånd <br>
             til dine IT-problemer </h2>
             <div class="cta_container">
-                <button class="orangebutton">Privat kunde</button>
-                <button class="whitebutton">Erhvervskunde</button>
+              <div> <a href="private.html"><button class="orangebutton">Privat kunde</button></a> </div>
+            <div>   <a href="company.html"> <button class="whitebutton">Erhvervskunde</button></a> </div>
             </div>
 
+    <div id="telephone">
+        <a href="tel:+4577348885">
+            <img src="images/call.svg" alt="phone icon">
+            <h3>77 34 88 85</h3>
+        </a>
+    </div>
+
         <img class="arrowdown" src="images/down.svg" alt="down arrow">
+
         <div class="socialmedia">
             <img src="images/facebook.png" alt="Facebook icon">
             <img src="images/google_my_bus.png" alt="google my Business icon">
@@ -36,5 +57,6 @@
     </section>
 
     <script src="js/main.js"></script>
+
 </body>
 </html>
