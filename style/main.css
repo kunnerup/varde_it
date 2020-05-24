@@ -344,13 +344,13 @@ animation: blink 3300ms infinite;
 .rightbottomline {
     border-right: 3px var(--lightorange) solid;
     border-bottom: 3px var(--lightorange) solid;
-    height: 70px;
+    height: 120px;
     width: 100%;
     text-align: center;
 }
 .rightbottomline h2 {
     padding: 6px;
-    margin-top: 20px;
+    margin-top: 60px;
 }
 
 #width{
