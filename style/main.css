@@ -161,7 +161,7 @@ nav ul {
     font-family: headline;
     overflow: visible;
     margin-top: -3px;
-    position: relative;
+    position: absolute;
     z-index: 9999;
 }
 
@@ -530,6 +530,7 @@ p {
         margin-top:0;
         font-family: headline;
         overflow: visible;
+        position: relative;
     }
 
     nav ul li {
