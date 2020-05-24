@@ -329,6 +329,7 @@ animation: blink 3300ms infinite;
 
 .row {
     flex-direction: column;
+    position: relative;
 }
 
 #tilbyder {
@@ -362,6 +363,18 @@ animation: blink 3300ms infinite;
     width: 100%;
 }
 
+.stik1 {
+    position: absolute;
+    height: 40px;
+    width: 30px;
+    object-fit: scale-down;
+    display: inline-block;
+    transform: rotate(180deg);
+    z-index: 1000; 
+    bottom: -12px;
+    left:-13.312px;
+}
+
 .leftline p {
     line-height: 25px;
     padding-top: 20px;
@@ -380,14 +393,15 @@ animation: blink 3300ms infinite;
 cursor: pointer;
 }
 
-#se_mere:hover {
+#se_mere:hover{
 transform: scale(1.05);
 }
 
-#rightkeyelements {
-    margin-top: 50px;
-    width: 90%;
+#rightkeyelements {    ¨
     padding: 20px;
+    padding-top: 90px;
+    width: 90%;
+    border-left: 3px solid var(--lightorange);
 }
 
 #rightkeyelements div {
@@ -448,6 +462,8 @@ flex-wrap: wrap;
 
 #aboutusinner ul {
     list-style: circle;
+    list-style-position: inside;
+    padding-bottom: 35px;
 }
 
 #aboutusinner h3, #aboutusinner h4, #aboutusinner p{
@@ -455,19 +471,46 @@ flex-wrap: wrap;
 }
 
 #aboutusinner div {
-    width: 90%;
+    width: 89%;
     margin: auto;
 }
 #aboutusinner div div {
-width: 100%;
 display: flex;
 justify-content: space-around;
+flex-direction: row-reverse;
 }
 
 #aboutusinner div div div {
-    width: 45%;
+    width: 70%;
     display: flex;
     flex-direction: column;
+}
+
+#aboutusinner div div img {
+    width: 29%;
+    height: 29%;
+    border-radius: 50%;
+    object-fit: scale-down;
+    border: 3px solid var(--lightorange);
+    margin-right: -30px;
+    margin-top: 65px;
+}
+
+#rightline {
+    border-right: 3px solid var(--lightorange);
+}
+
+.column h3 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.column h4 {
+    font-size: 17px;
+font-style: italic;
+    font-family: basic;
+    font-weight: lighter;
+    padding-bottom: 20px;
 }
 
 /*--------------TABLET---------------------*/
@@ -639,6 +682,9 @@ p {
     #rightkeyelements {
         width: 40%;
         margin-top: 0;
+        padding: 0;
+        padding-top: 20px;
+        border-left: none;
     }
 
     .row {
@@ -655,5 +701,13 @@ width: 65%;
     #aboutright{
         width: 35%;
         text-align: left;
+    }
+
+    #aboutusinner div div {
+        flex-direction: row;
+    }
+
+    .column {
+        border-right: 3px solid var(--lightorange);
     }
 }
