@@ -10,7 +10,9 @@
 }
 
 *{padding: 0;
-margin: 0;}
+margin: 0;
+font-family: basic;
+}
 
 h2{
     font-size: 1.95em;
@@ -128,6 +130,23 @@ body::-webkit-scrollbar-thumb {
     30% {transform: rotate(0turn)}
     60%{transform: rotate(-0.01turn)}
     100% {transform: rotate(0turn)}
+}
+
+@keyframes fade1 {
+    0%, 25%, 100% { opacity:0}
+    3%, 22% {opacity: 1;}
+}
+@keyframes fade2 {
+    0%, 25%, 50%, 100% {opacity:0}
+    28%, 47% {opacity: 1;}
+}
+@keyframes fade3 {
+    0%, 50%, 75%, 100% {opacity:0}
+    53%, 72% {opacity: 1;}
+}
+@keyframes fade4 {
+    0%, 75%, 100% {opacity:0}
+    78%, 97% {opacity: 1;}
 }
 
 /*NAVIGATION*/
@@ -268,6 +287,12 @@ nav ul li:hover {
   }
 
 
+/*-----------------FOOTER------------*/
+footer {
+    background-color: var(--darkblue);
+    height: 200px;
+}
+
 /*FORSIDE*/
 #landingpage{
     height: 40vh;
@@ -397,7 +422,7 @@ cursor: pointer;
 transform: scale(1.05);
 }
 
-#rightkeyelements {    ¨
+#rightkeyelements {
     padding: 20px;
     padding-top: 90px;
     width: 90%;
@@ -463,7 +488,7 @@ flex-wrap: wrap;
 #aboutusinner ul {
     list-style: circle;
     list-style-position: inside;
-    padding-bottom: 35px;
+    padding-bottom: 65px;
 }
 
 #aboutusinner h3, #aboutusinner h4, #aboutusinner p{
@@ -471,7 +496,7 @@ flex-wrap: wrap;
 }
 
 #aboutusinner div {
-    width: 89%;
+    width: 90%;
     margin: auto;
 }
 #aboutusinner div div {
@@ -498,6 +523,23 @@ flex-direction: row-reverse;
 
 #rightline {
     border-right: 3px solid var(--lightorange);
+    box-sizing: border-box;
+}
+
+#rightline {
+    border-right: 3px solid var(--lightorange);
+}
+
+#endingline {
+    height: 20px;
+    display: flex;
+}
+
+#topleftline {
+    border-top: 3px solid var(--lightorange);
+    border-left: 3px solid var(--lightorange);
+    height: 20px;
+    padding-left: 3px;
 }
 
 .column h3 {
@@ -512,6 +554,116 @@ font-style: italic;
     font-weight: lighter;
     padding-bottom: 20px;
 }
+
+#contactfrontpage {
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+#contactfrontpage div {
+height: 100px;
+display: flex;
+margin-bottom: 100px;
+}
+
+#contactfrontpage div div{
+    width: 50%;
+}
+
+#contactfrontpage ul {
+    list-style-image: url('../images/swoosh_small.png');
+    list-style-position: inside;
+    font-size: 19px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+#contactfrontpage ul li {
+    padding: 10px;
+}
+
+#contactfrontpage button {
+    background-color: var(--darkblue);
+    border: none;
+}
+
+#contactfrontpage #rightline{
+position: relative;
+}
+
+#contactfrontpage #rightline::after{
+content: url('');
+position: absolute;
+transform: rotate(180deg);
+background-image: url(../images/stik.png);
+height: 40px;
+width: 40px;
+background-size: contain;
+background-repeat: no-repeat;
+bottom: -10px;
+right: -10.45px;
+}
+
+/*TESTIMONIAL SLIDER*/
+.testimonial-slider {
+    display: block;
+    width: 90%;
+    height: auto;
+margin: auto;
+margin-top: 100px;
+ }
+ 
+ .testimonial-slider ul.cssslider {
+    display: block;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+ }
+ 
+ .testimonial-slider ul.cssslider li {
+     position: absolute;
+     display: block;
+     width: 100%;
+     opacity: 0;
+ }
+ .testimonial-slider ul.cssslider li:nth-child(1) {
+     opacity: 1;
+             animation: fade1 25s infinite;
+ }
+ .testimonial-slider ul.cssslider li:nth-child(2) {
+             animation: fade2 25s infinite;
+ }
+ .testimonial-slider ul.cssslider li:nth-child(3) {
+             animation: fade3 25s infinite;
+ }
+ .testimonial-slider ul.cssslider li:nth-child(4) {
+             animation: fade4 25s infinite;
+ }
+ 
+ .testimonial-slider-content{
+width: 90%;
+ }
+
+ .testimonial-slider q {
+     position: relative;
+    display: block;
+    letter-spacing: .5pt;
+    max-width: 500px;
+    margin: auto;
+    font-size: 16px;
+ }
+ 
+ .testimonial-slider .kilde {
+     margin-top: 10px;
+     color: var(--lightorange);
+     font-style: italic;
+ }
 
 /*--------------TABLET---------------------*/
 @media (min-width: 600px) {
@@ -703,11 +855,30 @@ width: 65%;
         text-align: left;
     }
 
+    #aboutusinner div{
+        width: 95%;
+    }
+
+    #rightline{
+        border-right: 0;
+        padding-bottom: 50px;
+    }
+
     #aboutusinner div div {
         flex-direction: row;
     }
 
-    .column {
+    #aboutusinner div div.column {
+       width: 40%;
+    }
+
+    #aboutusinner div div img {
+        border-radius: 0;
+    }
+
+    #borderpluspadding {
+        width: 90%;
+        padding-bottom: 30px;
         border-right: 3px solid var(--lightorange);
     }
 }
