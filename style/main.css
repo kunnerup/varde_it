@@ -291,6 +291,14 @@ nav ul li:hover {
 footer {
     background-color: var(--darkblue);
     height: 200px;
+    width: 100%;
+}
+
+footer img {
+    display: block;
+    width: 70%;
+    margin: auto;
+    padding: 30px;
 }
 
 /*FORSIDE*/
