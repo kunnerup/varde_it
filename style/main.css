@@ -6,7 +6,7 @@
     --lightorange: #F39200;
     --darkorange: #F75C14;
     --whitetext: white;
-    --shadow: 6px 6px 10px black;
+    --shadow: 3px 3px 8px #525252;
 }
 
 *{padding: 0;
@@ -674,6 +674,64 @@ width: 100%;
      margin: auto;
  }
 
+
+ /*KONTAKT*/
+.contact {
+    width: 90%;
+    margin: auto;
+}
+
+.contact h2 {
+    color: var(--lightorange);
+    text-align: center;
+}
+
+.contact_form_box form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contact_form_box form input {
+    padding: 10px;
+    border: 1px solid var(--lightblue);
+    margin-top: 15px;
+    width: 90%;
+}
+
+.contact_form_box form textarea {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid var(--lightblue);
+    width: 90%;
+}
+
+.contact_form_box form input::placeholder,.contact_form_box form textarea::placeholder {
+    color: var(--lightblue);
+    font-size: 16px;
+    font-family: headline;
+}
+
+.contact_form_box form input:focus, .contact_form_box form textarea:focus{
+    outline: none;
+    border: 1px solid var(--lightorange);
+    box-shadow: var(--shadow);
+}
+
+.contact_form_box .orangebutton {
+    border: none;
+}
+
+.callus{
+    margin: auto;
+    text-align: center;
+}
+.callus h2 {
+    color: var(--lightorange);
+    margin-top: 50px;
+}
+
 /*--------------TABLET---------------------*/
 @media (min-width: 600px) {
 
@@ -888,13 +946,16 @@ width: 65%;
         text-align: left;
     }
 
+    #aboutrightline {
+        margin-right: -2px;
+    }
+
     #aboutusinner div{
         width: 95%;
     }
 
     #rightline{
         border-right: 0;
-
     }
 
     #aboutusinner div div {
@@ -907,6 +968,9 @@ width: 65%;
 
     #aboutusinner div div img {
         border-radius: 0;
+        margin: auto;
+        margin-top: 50px;
+        box-sizing: border-box;
     }
 
     #borderpluspadding {
@@ -921,9 +985,7 @@ width: 65%;
         widows: 90%;
         flex-direction: row-reverse;
         border-left: 3px solid var(--lightorange);
-        box-sizing: border-box;
         padding-bottom: 50px;
-        padding-right: 10%;
     }
 
     #endingline {
@@ -932,7 +994,8 @@ width: 65%;
 
     #contactfrontpage #rightline {
         border-left: 3px solid var(--lightorange);
-        box-sizing: border-box;
+        border-right: 3px solid white;
+        margin-left: -3px;
     }
 
     #rightline::after {
@@ -959,5 +1022,30 @@ width: 65%;
  animation: none;
  margin-left: 45.55%;
 transform: scale(1.05);
+    }
+
+    /*KONTAKT DESKTOP*/
+    .contact .contact_form_box form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .contact .contact_form_box {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .contact_form_box form input {
+        width: 45%;
+    }
+
+    .contact_form_box form textarea {
+        width: 100%;
+    }
+
+    .contact_form_box .orangebutton {
+     margin: auto;
+     margin-top: 15px;
     }
 }
