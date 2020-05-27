@@ -153,7 +153,6 @@ body::-webkit-scrollbar-thumb {
 nav {
     height: 70px;
     background: linear-gradient(var(--lightblue),var(--darkestblue));
-    overflow: visible;
 }
 
 nav img {
@@ -173,12 +172,9 @@ nav ul {
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    height: auto;
-    float: right;
     padding: 0;
     margin: 0;
     font-family: headline;
-    overflow: visible;
     margin-top: -3px;
     position: absolute;
     z-index: 9999;
@@ -193,10 +189,8 @@ nav ul li {
     width: 90%;
     margin-right: 90px;
     font-size: 18px;
-    position: relative;
     padding: 10px 10px;
     cursor: pointer;
-    overflow: visible;
 }
 
 nav ul li:hover {
@@ -211,7 +205,6 @@ nav ul li:hover {
     clip-path: none;
     width: 100px;
     z-index: 9999;
-    overflow: visible;
 }
 .dropdown li {
     padding-top: 5px; 
@@ -225,7 +218,8 @@ nav ul li:hover {
 #ydelser:hover .dropdown {
     display: inline-block;
     left: 0;
-    top: 60px;
+    top: 90px;
+    position: absolute;
   }
 
   /*BURGERMENU, ANIMATION*/
@@ -290,13 +284,13 @@ nav ul li:hover {
 /*-----------------FOOTER------------*/
 footer {
     background-color: var(--darkblue);
-    height: 200px;
     width: 100%;
 }
 
 footer img {
     display: block;
     width: 70%;
+    max-width: 300px;
     margin: auto;
     padding: 30px;
 }
@@ -655,7 +649,12 @@ margin-top: 100px;
  }
  
  .testimonial-slider-content{
-width: 90%;
+width: 100%;
+ }
+
+ .testimonial-slider h2 {
+     max-width: 600px;
+     margin: auto;
  }
 
  .testimonial-slider q {
@@ -671,6 +670,8 @@ width: 90%;
      margin-top: 10px;
      color: var(--lightorange);
      font-style: italic;
+     max-width: 500px;
+     margin: auto;
  }
 
 /*--------------TABLET---------------------*/
@@ -718,27 +719,51 @@ p {
     }
 
     nav ul {
-        list-style: none;
-        background-color: var(--lightorange);
-        clip-path: polygon(7% 0, 100% 0%, 100% 100%, 0 100%);
-        -webkit-clip-path: polygon(7% 0, 100% 0%, 100% 100%, 0 100%);
-        display: inline-flex;
-        justify-content: flex-end;
-        align-items: center;
-        width: 65%;
-        height: 100px;
-        float: right;
-        padding: 0;
+        position: absolute;
         margin: 0;
-        margin-top:0;
-        font-family: headline;
-        overflow: visible;
-        position: relative;
+        top: 0;
+        padding: 0;
+        right: 0;
+        display: flex;
+        height: 100px;
+        width: 60%;
+        justify-content: flex-end;
     }
 
     nav ul li {
-        padding: 30px 0;
+        position: relative;
+        margin-right: 34px;
         width: auto;
+    }
+
+    .dropdown{
+        height: auto;
+        margin-top: -50px;
+    }
+
+    nav::before{
+        content: "";
+        position: absolute;
+        background-color: black;
+        height: 100px;
+        z-index: 99999;
+        width: 140px;
+        transform: skew(-30deg);
+        left: 35%;
+        background: linear-gradient(var(--lightblue),var(--darkestblue));
+    }
+
+    @media (min-width: 3000px) {
+        nav::before{
+        left: 32%;
+        width: 190px;
+    }
+    nav ul li {
+        margin-right: 84px;
+    }}
+
+    #burger {
+        display: none;
     }
 
     /*GENERAL DESKTOP*/
@@ -869,7 +894,7 @@ width: 65%;
 
     #rightline{
         border-right: 0;
-        padding-bottom: 50px;
+
     }
 
     #aboutusinner div div {
@@ -886,7 +911,53 @@ width: 65%;
 
     #borderpluspadding {
         width: 90%;
+        box-sizing: border-box;
         padding-bottom: 30px;
         border-right: 3px solid var(--lightorange);
+        border-bottom: 3px solid var(--lightorange);
+    }
+
+    #aboutusinner div #soren{
+        widows: 90%;
+        flex-direction: row-reverse;
+        border-left: 3px solid var(--lightorange);
+        box-sizing: border-box;
+        padding-bottom: 50px;
+        padding-right: 10%;
+    }
+
+    #endingline {
+        display: none;
+    }
+
+    #contactfrontpage #rightline {
+        border-left: 3px solid var(--lightorange);
+        box-sizing: border-box;
+    }
+
+    #rightline::after {
+        left:-32px;
+    }
+
+    .testimonial-slider q {
+       font-size: 22px;
+    }
+    
+    .testimonial-slider .kilde {
+  font-size: 22px;
+    }
+
+    #contactfrontpage h2, #contactfrontpage p, #contactfrontpage ul {
+        max-width: 600px;
+        margin: auto;
+    }
+    #contactfrontpage .orangebutton {
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+    #contactfrontpage .orangebutton:hover{
+ animation: none;
+ margin-left: 45.55%;
+transform: scale(1.05);
     }
 }
