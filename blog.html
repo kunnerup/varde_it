@@ -10,9 +10,24 @@
     <link rel="icon" href="favicon.ico" type="image/ico" sizes="16x16">
 </head>
 <body>
+<section id="blog">
+    <div id="bloghero">
+        <h2>Velkommen til vores blog</h2>
+        <p>Få inspiration, se vores test og meget mere.</p>
+        <img id="bloglogo" src="images/logo_notext.png" alt="logo uden tekst">
+    </div>
+    <div id="filters">
+    <h4>Søg efter titel</h4>
+    <input type="search" placeholder="Søg" onkeyup="search(this.value)">
 
+    <h4>Vælg bestemt kategori</h4>
+    <select id="select-category" name="category" onchange="categorySelected(this.value)">
+        <option value="">Vælg kategori</option>
+      </select>
+
+</div>
     <section id="post_container"></section>
-
+<section id="detail-view"></section>"
 
 <section class="contact">
 
@@ -32,6 +47,7 @@
     
     </section>
 
+</section>
     <div id="loader">
         <div class="spinner"></div>
       </div>

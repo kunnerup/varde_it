@@ -44,17 +44,112 @@ function appendPosts(posts) {
 
   for (let post of posts) {
     postContainer += `
-      <article>
+      <article onclick="showDetailView(post)">
       <img src="${post.acf.img}" alt="Blog picture">
         <h2>${post.title.rendered}</h2>
         <p>${post.acf.first_part_text}</p>  
-
-        <p>${post.acf.second_part_text}</p>  
       </article>
     `;
   }
 
   document.querySelector('#post_container').innerHTML = postContainer;
+}
+
+//Søg i blogindlæg
+function search(value) {
+  let searchQuery = value.toLowerCase();
+  let filteredPosts = [];
+  for (let post of posts) {
+    let title = post.title.rendered.toLowerCase();
+    if (title.includes(searchQuery)) {
+      filteredPosts.push(post);
+    }
+  }
+  console.log(filteredPosts);
+  appendPosts(filteredPosts);
+}
+
+
+//Læs hele blogindlægget
+function showDetailView(post){
+  _selectedPost = posts[post];
+  document.querySelector("#detail-view").innerHTML = `
+      <h2>${_selectedPost.acf.first_part_text}</h2>
+
+      </article>
+  `;
+}
+
+
+// FETCHER DE FORSKELLIGE KATEGORIER FRA BLOGGEN
+function getCategories() {
+  fetch('http://anderskunnerup.dk/wordpress/wp-json/wp/v2/categories')
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(categories) {
+      console.log(categories);
+      appendCategories(categories);
+    });
+}
+
+getCategories();
+
+// Appende genrene til dropdown menuen
+function appendCategories(categories) {
+  let byCategoryHtml = "";
+  for (let category of categories) {
+    byCategoryHtml += `
+      <option value="${category.id}">${category.name}</option>
+    `;
+  }
+
+  document.querySelector('#select-category').innerHTML += byCategoryHtml;
+}
+
+//Valgte kategori fetcher blogindlæg ind i valgte
+function categorySelected(categoryId) {
+  console.log(`Category ID: ${categoryId}`);
+  if (categoryId) {
+    showLoader(true);
+    fetch(`http://anderskunnerup.dk/wordpress/wp-json/wp/v2/posts?_embed&categories=${categoryId}`)
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(posts) {
+        console.log(posts);
+        appendPostsByCategory(posts);
+        showLoader(false);
+      });
+  } else {
+    document.querySelector('#post_container').innerHTML = `
+      <p>Vælg venligst en kategori.</p>
+    `;
+  }
+}
+
+// append blogindlæg efter kategori
+function appendPostsByCategory(postsByCategory) {
+  let htmlCategory = "";
+
+  for (let post of postsByCategory) {
+    htmlCategory += `
+    <article onclick="showDetailView(post)">
+    <img src="${post.acf.img}" alt="Blog picture">
+      <h2>${post.title.rendered}</h2>
+      <p>${post.acf.first_part_text}</p>  
+    </article>
+    `;
+  }
+
+  // UX optimering - hvis ingen posts i valgte kategori, hjælp brugeren til at vælge på ny
+  if (postsByCategory.length === 0) {
+    htmlCategory = `
+      <p>Ingen blogindlæg at vise. Vælg venligst en anden kategori.</p>
+    `;
+  }
+
+  document.querySelector('#post_container').innerHTML = htmlCategory;
 }
 
 
