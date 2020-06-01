@@ -957,7 +957,7 @@ p {
     }
 
     /*FORSIDE DESKTOP*/
-#landingpage{
+    #landingpage{
     height: calc(97.9vh - 150px);
     min-height: 600px;
     max-height: inherit;
