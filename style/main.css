@@ -1167,7 +1167,7 @@ transform: scale(1.05);
      }
      .desktopservicebox ul {
         direction:rtl;
-        list-style-image: url('/images/flueorange.png');
+        list-style-image: url('../images/flueorange.png');
         margin-top:20%;
         color:var(--lightorange);
         font-size: 2em;
@@ -1215,16 +1215,15 @@ transform: scale(1.05);
      }
      .listbox ul{
          margin-top: 10%;
-        list-style-image: url('/images/fluemedcirkel.png');
+        list-style-image: url('../images/fluemedcirkel.png');
 
      }
      .listbox li{
-         
+         line-height: 20px;
      }
      #semereknap{
          margin-top: 10%;
      }
-
 
      /***displaynoneveiw*/
      .Appleprodukt{
