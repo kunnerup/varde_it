@@ -731,6 +731,129 @@ width: 100%;
     color: var(--lightorange);
     margin-top: 50px;
 }
+/*-------------Service page mobile---------------*/
+.servicebox1{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    
+    margin: auto;
+    
+    
+    
+    }
+    
+    .kasse1-service a{
+       
+        background-color:var(--lightorange);
+        border: none;
+        border-radius: 5px;
+        font-size: 15px;
+       
+    } 
+    
+    
+    
+    .kasse1-service img{
+        height: 70px;
+        width: 70px;
+    }
+    
+    .kasse1-service{
+        margin: auto;
+        margin-top: 5%;
+        width: 48%;
+       height: 40%;
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+    }
+    
+    
+    
+    
+    .overkasse{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+       
+    }
+    /* Slideshow container */
+    .slideshow-container {
+        margin-top: 10%;
+        position: relative;
+        background: #f1f1f1f1;
+      }
+      
+      /* Slides */
+      .mySlides {
+        display: none;
+        padding: 80px;
+        text-align: center;
+      }
+      
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -30px;
+        padding: 16px;
+        color: #888;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        position: absolute;
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+        color: white;
+      }
+      
+      /* The dot/bullet/indicator container */
+      .dot-container {
+          text-align: center;
+          padding: 20px;
+          background: #ddd;
+      }
+      
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      /* Add a background color to the active dot/circle */
+      .active, .dot:hover {
+        background-color:white;
+      }
+      
+    .desktopservicebox1{
+        display: none;
+     }
+     .desktopservicebox2{
+       display: none;
+    }
+
 
 /*--------------TABLET---------------------*/
 @media (min-width: 600px) {
@@ -1023,7 +1146,139 @@ width: 65%;
  margin-left: 45.55%;
 transform: scale(1.05);
     }
+ /*-------service desktop---------*/
+ .overkasse{flex-direction: row;
+        
+ }
+    
+    .desktopservicebox1 h2 {
+       color:var(--lightorange);
+       font-size: 3.55em;
+    }
+    .desktopservicebox1 p {
+        
+        color:var(--lightorange);
+        
+     }
+     .desktopservicebox1 ul {
+        direction:rtl;
+        list-style-image: url('/images/flueorange.png');
+        margin-top:20%;
+        color:var(--lightorange);
+        font-size: 2em;
 
+        
+     }
+     
+     
+     
+     .desktopservicebox2 h2 {
+        color:var(--darkblue);
+        font-size: 3.55em;
+     }
+     .desktopservicebox2 ul {
+         color:var(--darkblue);
+         list-style-image: url('/images/Flueblue.png');
+         direction:rtl;
+         font-size: 2em;
+         margin-top: 25%;
+         
+      }
+      .desktopservicebox2 p{
+        color:var(--darkblue);
+        
+
+      }
+      .it-tvtekst{
+          text-align: center;
+      }
+      .kontakt {
+          display: flex;
+          flex-direction: row;
+          
+      }
+      .kontakt img{
+          height: 75px;
+          width: 75px;
+          border-radius: 50px;
+          margin-left: 5%;
+      }
+      .kontakt button{
+          margin-left: 20%;
+      }
+
+      /**** buttons*/
+      .orangebuttonydelse {
+        font-size: 1.1em;
+        padding: 15px 15px 15px 15px;
+        border: none;
+        background-color: var(--lightorange);
+        color: white;
+        font-family: headline;
+        width: 100%;
+        margin-top: 12%;
+        max-width: 150px;
+        cursor: pointer;
+        margin-left: 10%;
+    }
+    .bluebuttonydelse {
+        font-size: 1.1em;
+        padding: 15px 15px 15px 15px;
+        border:none;
+        background-color: var(--lightblue);
+        color: white;
+        font-family: headline;
+        width: 100%;
+        margin-top: 12%;
+        max-width: 150px;
+        cursor: pointer;
+        margin-left: 10%;
+    }
+     .desktopservicebox1{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+        margin-top: 15%;
+        width: 100%;
+        height: 60vh;
+        background-color:var(--darkblue);
+       
+        
+    }
+    .desktopservicebox2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+       margin-top: 15%;
+       width: 100%;
+       height: 50vh;
+       background-color:var(--lightorange);
+   }
+   .servicebox1{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    
+    flex-wrap: nowrap;
+    height: 100%;
+    
+    margin: auto;
+    
+    
+    
+    }
+    .kasse1-service{
+        margin: auto;
+        margin-top: 5%;
+        width: 70%;
+       height: 40%;
+       margin: 2%;
+       
+    
+       display: flex;
+       flex-direction: column-reverse;
+       
+    }
     /*KONTAKT DESKTOP*/
     .contact .contact_form_box form {
         flex-direction: row;
