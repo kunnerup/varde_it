@@ -37,13 +37,13 @@
     <h2>Ydelser</h2>
 <div class="overkasse">
 <div class="servicebox1">
-    <div class="kasse1-service"><a><p>IT og TV</p>
+    <div class="kasse1-service" onclick="modalIt()"><a><p>IT og TV</p>
     <img src="images/computer.png"></a></div>
-    <div class="kasse1-service"><a><p>Apple produkter</p>
+    <div class="kasse1-service" onclick="modalApple()"><a><p>Apple produkter</p>
         <img src="images/apple.png"></a></div>
-    <div class="kasse1-service"><a><p>Alarm og sikkerhed</p>
+    <div class="kasse1-service" onclick="modalAlarm()"><a><p>Alarm og sikkerhed</p>
         <img src="images/overvaagning.png"></a></div>
-    <div class="kasse1-service"><a><p>El og installation</p>
+    <div class="kasse1-service" onclick="modalEl()"><a><p>El og installation</p>
         <img src="images/el.png"></a></div>
         <div class="kasse1-service"><a><p>Byg din computer</p>
             <img src="images/computer.png"></a></div>
@@ -139,8 +139,9 @@
     </div>
 </section>
 <section class="moreinfogrup">
-   <div class="desktopservicebox">
-    <div class="it-tvtekst" id="ITTV">
+   <div class="desktopservicebox"  id="ittv">
+    <div class="it-tvtekst">
+        <p class="onlymobile" id="closex" onclick="closeinfo()">X</p>
 <h2>IT og TV</h2>
 <p>hos varde it har vi mange års erfaring inden for tv og tv bokse og antennestik.<br> oven i det har vi også stor erfaring inden for computer.<br> hvis du har et problem er du velkommen til og ringe til Nicolai </p>
 <div class="kontakt">
@@ -159,8 +160,9 @@
    </div>
 
 
-   <div class="desktopservicebox">
-    <div class="it-tvtekst" id="APPLE">
+   <div class="desktopservicebox" id="apple">
+    <div class="it-tvtekst">
+        <p class="onlymobile" id="closex" onclick="closeinfo()">X</p>
         <h2>Apple produkter</h2>
         <p>Vi kan hjælpe med support til diverse Apple produkter.<br> vi kan tilbyde hjælp til opsætning, optimering osv. </p>
         <div class="kontakt">
@@ -177,8 +179,9 @@
             </ul>
             </div>
 </div>
-<div class="desktopservicebox">
-    <div class="it-tvtekst" id="Alarmogsikkerhed">
+<div class="desktopservicebox" id="alarmogsikkerhed">
+    <div class="it-tvtekst">
+        <p id="onlymobile" class="closex" onclick="closeinfo()">X</p>
         <h2>Alarm og sikkerhed</h2>
         <p>Ønsker du at beskytte dit hjem?<br> både når du er hjemme men også når du ikke er hjemme<br>
             Så er Nookbox alarmsystemet en rigtig god mulighed.<br>
@@ -203,8 +206,9 @@
             </ul>
             </div>
 </div>
-<div class="desktopservicebox">
-    <div class="it-tvtekst" id="Eloginstallation">
+<div class="desktopservicebox" id="eloginstallation">
+    <div class="it-tvtekst">
+        <p class="onlymobile" id="closex" onclick="closeinfo()">X</p>
         <h2>El og installation</h2>
         <p>Hos Harder & Køhler kan vi også tilbyde en service inden for el-installation.</p>
         <div class="kontakt">
