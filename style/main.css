@@ -731,6 +731,9 @@ width: 100%;
     color: var(--lightorange);
     margin-top: 50px;
 }
+#contactydelse{
+    margin-top: 50px;
+}
 /*-------------Service page mobile---------------*/
 .servicebox1{
     display: flex;
@@ -947,7 +950,7 @@ top: 5px;
         text-align: center;
         margin-top: 5%;
         color: var(--lightorange);
-        margin-bottom: -10%;
+        margin-bottom: -5%;
         margin-top: 10%;
     }
 
@@ -1361,16 +1364,16 @@ transform: scale(1.05);
       /**** buttons*/
       .orangebuttonydelse {
         font-size: 1.1em;
-        padding: 15px 15px 15px 15px;
+        padding: 15px 10px 15px 10px;
         border: none;
         background-color: var(--lightorange);
         color: white;
         font-family: headline;
         width: 100%;
-        margin-top: 12%;
+        margin-top: 30px;
         max-width: 150px;
         cursor: pointer;
-        margin-left: 10%;
+        margin-left: 30%;
     }
     .bluebuttonydelse {
         font-size: 1.1em;
@@ -1396,7 +1399,7 @@ transform: scale(1.05);
         height: 55%;
         background-color:var(--darkblue);
         position: relative;
-        padding-bottom: 5%;
+        padding-bottom: 2%;
         
        
         
@@ -1408,8 +1411,8 @@ transform: scale(1.05);
        margin-top: 5%;
        margin-right: 50%;
        width: 90%;
-       height: 55%;
-       padding-bottom: 5%;
+       height: 50%;
+       padding-bottom: 2%;
        background-color:var(--lightorange);
        position: relative;
        
@@ -1495,7 +1498,7 @@ transform: scale(1.05);
      margin: auto;
      margin-top: 15px;
     }
-    .contactydelse{
+    #contactydelse{
         margin-top: 200px;
     }
 }
