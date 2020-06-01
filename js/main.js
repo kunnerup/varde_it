@@ -89,24 +89,26 @@ function showSlides(n) {
 
 // popup
 
-function modalAndry() {
-    let andrydk = document.querySelector("#ITTV");
-    andrydk.style.display = "block";
-
+function modalAlarm() {
+    let alarms = document.querySelector("#alarmogsikkerhed");
+    alarms.style.display = "block";
   }
-  function modalAndry() {
-    let andrydk = document.querySelector("#ITTV");
-    andrydk.style.display = "block";
-
+  function modalEl() {
+    let el = document.querySelector("#eloginstallation");
+    el.style.display = "block";
   }
-  function modalAndry() {
-    let andrydk = document.querySelector("#ITTV");
-    andrydk.style.display = "block";
-
+  function modalIt() {
+    let it = document.querySelector("#ittv");
+    it.style.display = "block";
+  }
+  function modalApple() {
+    let apple = document.querySelector("#apple");
+    apple.style.display = "block";
   }
 
   function closeinfo() {
-    document.getElementById("ITTV").style.display = "none";
-    document.getElementById("APPLE").style.display = "none";
-    document.getElementById("APPLE").style.display = "none";
+    document.getElementById("ittv").style.display = "none";
+    document.getElementById("apple").style.display = "none";
+    document.getElementById("eloginstallation").style.display = "none";
+    document.getElementById("alarmogsikkerhed").style.display = "none";
   }

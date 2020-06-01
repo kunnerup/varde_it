@@ -850,8 +850,15 @@ width: 100%;
       }
       
     .desktopservicebox{
-        display: none;
         position:absolute;
+        top: 100px;
+        left: 5%;
+        background-color: var(--white);
+        z-index: 500;
+     }
+
+     #apple, #alarmogsikkerhed, #eloginstallation, #ittv{
+         display: none;
      }
     
 
@@ -1312,8 +1319,6 @@ transform: scale(1.05);
         width: 70%;
        height: 40%;
        margin: 2%;
-      
-    
        display: flex;
        flex-direction: column-reverse;
        
