@@ -911,12 +911,16 @@ width: 100%;
 
      #apple, #alarmogsikkerhed, #eloginstallation, #ittv{
          display: none;
+         
+         
          background-color: var(--darkblue);
          text-align: center;
          width: 90%;
          margin: auto;
          box-shadow: var(--shadow);
-         padding: 2px;
+         
+         border-radius: 25px;
+         
          
      }
      
@@ -924,14 +928,20 @@ width: 100%;
          display: none;
      }
      #apple img, #alarmogsikkerhed img, #eloginstallation img, #ittv img{
-         height: 75px;
-         width: 75px;
-         border-radius: 50px;
-         margin-top: 10%;
-         margin-left: 40%;
+         height: 50%;
+         width: 100%;
+         margin-top: -15%;
+         border-radius: 25px 25px 0px 0px;
+        
+         
+         
+        
      }
      #apple h2, #alarmogsikkerhed h2, #eloginstallation h2, #ittv h2{
          color:var(--lightorange);
+         margin-top: 5%;
+         font-size: 35px;
+        
      }
      #apple h4, #alarmogsikkerhed h4, #eloginstallation h4, #ittv h4{
         color:var(--lightorange);
@@ -939,10 +949,24 @@ width: 100%;
     }
      #apple p, #alarmogsikkerhed p, #eloginstallation p, #ittv p{
         color:var(--lightorange);
+        font-size: 18px;
+    }
+    .it-tvlistemobile h4{
+        text-align: center;
+        font-size: 25px;
     }
     .it-tvlistemobile ul{
         color: var(--lightorange);
         list-style: none;
+        
+    }
+    .it-tvlistemobile li{
+        color: var(--lightorange);
+        list-style: none;
+        font-size: 25px;
+        text-align: center;
+        
+        
     }
     .orangebuttonydelse {
         font-size: 1.1em;
@@ -953,10 +977,11 @@ width: 100%;
         font-family: headline;
         width: 100%;
         margin-bottom: 10%;
-        margin-top: 5%;
-        max-width: 150px;
+        margin-top: 20%;
+        max-width: 250px;
         cursor: pointer;
-        margin-left: 5%;
+  
+        border-radius: 5px;
         
     }
     .bluebuttonydelse {
@@ -966,12 +991,13 @@ width: 100%;
         background-color: var(--lightorange);
         color: white;
         font-family: headline;
-        width: 100%;
+        width: 200px;
         margin-bottom: 10%;
-        margin-top: 5%;
-        max-width: 150px;
+        margin-top: 10%;
+        max-width: 250px;
         cursor: pointer;
-        margin-left: 5%;
+        
+        border-radius: 5px;
         
     }
     .kontakt {
@@ -982,10 +1008,11 @@ width: 100%;
     #closex{
         position: absolute;
         right: 10px;
-top: 5px;
-        font-size: 35px;
-        margin-right: 2%;
+
+      
+        top: 11px;
     }
+    
     .it-tvtekst{
         margin-top: 40px;
     }
@@ -1486,16 +1513,13 @@ transform: scale(1.05);
         width: 75px;
         border-radius: 50px;
         margin: auto;
-        margin-top: 5%;
+        
         
     }
     
-      .kontakt img{
-          height: 75px;
-          width: 75px;
-          border-radius: 50px;
-          margin-left: 5%;
-      }
+     
+
+
       .kontakt button{
           margin-left: 20%;
       }
@@ -1508,9 +1532,9 @@ transform: scale(1.05);
         background-color: var(--lightorange);
         color: white;
         font-family: headline;
-        width: 100%;
+        width: 200px;
         margin-top: 30px;
-        max-width: 150px;
+        max-width: 250px;
         cursor: pointer;
         margin-left: 30%;
     }
@@ -1521,9 +1545,9 @@ transform: scale(1.05);
         background-color: var(--lightblue);
         color: white;
         font-family: headline;
-       
+       width: 200px;
         margin-top: 12%;
-        max-width: 150px;
+        max-width: 250px;
         cursor: pointer;
         margin-left: 10%;
         margin-top: 25%;
