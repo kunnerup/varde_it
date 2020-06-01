@@ -842,8 +842,8 @@ width: 100%;
         transition: background-color 0.6s ease;
       }
       
-      /* Add a background color to the active dot/circle */
-      .active, .dot:hover {
+      /* Tilføjer baggrundsfarve når der er klikket */
+      .active2, .dot:hover {
         background-color:white;
       }
       
@@ -947,6 +947,10 @@ p {
         display: none;
     }
 
+
+     /*------------FOOTER DESKTOP-------------*/
+
+
     /*GENERAL DESKTOP*/
     .onlymobile{
         display: none;
@@ -957,7 +961,7 @@ p {
     }
 
     /*FORSIDE DESKTOP*/
-#landingpage{
+    #landingpage{
     height: calc(97.9vh - 150px);
     min-height: 600px;
     max-height: inherit;
