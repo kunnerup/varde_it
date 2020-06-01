@@ -43,12 +43,13 @@ function appendPosts(posts) {
   let postContainer = "";
 
   for (let post of posts) {
-    htmlTemplate += `
+    postContainer += `
       <article>
-        <h2>${post.title.rendered} (${post.acf.year})</h2>
-        <img src="${post.acf.img}">
-        <p>${post.acf.title}</p>
-        <iframe src="${post.acf.trailer}"></iframe>
+      <img src="${post.acf.img}" alt="Blog picture">
+        <h2>${post.title.rendered}</h2>
+        <p>${post.acf.first_part_text}</p>  
+
+        <p>${post.acf.second_part_text}</p>  
       </article>
     `;
   }
@@ -86,6 +87,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active2";
 }
+
 
 // popup
 
