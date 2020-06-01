@@ -1,4 +1,5 @@
 <!--SERVICEPAGE-->
+<!--SERVICEPAGE-->
 <!DOCTYPE html>
 <html lang="da">
 <head>
@@ -36,13 +37,13 @@
     <h2>Ydelser / Erhverv</h2>
 <div class="overkasse">
 <div class="servicebox1">
-    <div class="kasse1-service"><a><p>IT og TV</p>
+    <div class="kasse1-service" onclick="modalIt()"><a><p>IT og TV</p>
     <img src="images/computer.png"></a></div>
-    <div class="kasse1-service"><a><p>Apple produkter</p>
+    <div class="kasse1-service" onclick="modalApple()"><a><p>Apple produkter</p>
         <img src="images/apple.png"></a></div>
-    <div class="kasse1-service"><a><p>Alarm og sikkerhed</p>
+    <div class="kasse1-service" onclick="modalAlarm()"><a><p>Alarm og sikkerhed</p>
         <img src="images/overvaagning.png"></a></div>
-    <div class="kasse1-service"><a><p>El og installation</p>
+    <div class="kasse1-service" onclick="modalEl()"><a><p>El og installation</p>
         <img src="images/el.png"></a></div>
         <div class="kasse1-service"><a><p>Byg din computer</p>
             <img src="images/computer.png"></a></div>
@@ -88,6 +89,7 @@
         <div class="listbox">
             <h4>Alarm og sikkerhed</h4>
             <ul>
+                
                 <li>Opsætning af videoovervågning</li>   
             <li>Opsætning af alarmsystemer</li> 
             <li>Opsætning af dørsensor</li>
@@ -111,8 +113,9 @@
             </section>
             </div>
 <section class="customslider">
+    <h3>Det siger vores kunder:</h3>
 <div class="slideshow-container">
-
+   
     <div class="mySlides">
       <q>Jeg er ikke af nyere dato, faktisk langt op i pensionsalderen, men driver dog stadig lidt virksomhed og har flere gange haft behov for IT hjælp. Den har jeg fået fra Nicolai Thaysen Køhler, som har været hurtig til at komme og har løst mine problemer på bedste vis til min fulde tilfredshed.</q>
       <p class="author">- Søren Kjær</p>
@@ -138,17 +141,28 @@
     </div>
 </section>
 <section class="moreinfogrup">
-   <div class="desktopservicebox">
-    <div class="it-tvtekst" id="ITTV">
+   <div class="desktopservicebox"  id="ittv">
+    <div class="it-tvtekst">
+        <p class="onlymobile" id="closex" onclick="closeinfo()">X</p>
 <h2>IT og TV</h2>
-<p>hos varde it har vi mange års erfaring inden for tv og tv bokse og antennestik.<br> oven i det har vi også stor erfaring inden for computer.<br> hvis du har et problem er du velkommen til og ringe til Nicolai </p>
+<p>hos varde it har vi mange års erfaring inden for <br>tv, tv bokse og antennestik. </p>
+<div class="it-tvlistemobile">
+    <ul>
+        <li><h4>Vi kan hjælpe med:</h4></li>
+    <li>Antennestik</li>   
+    <li>Opsætning af Computer</li> 
+    <li>Opsætning af printer</li>
+    <li>Optimering af computer</li>
+    </ul>
+    </div>
 <div class="kontakt">
     <img src="images/nicolai.jpg">
     <a href="#contact.html"><button class="orangebuttonydelse">Kontakt Nicolai</button></a>
 </div>
 </div>
-<div class="it-tvliste">
+<div class="it-tvlistedesktop">
     <ul>
+        
     <li>Antennestik</li>   
     <li>Opsætning af Computer</li> 
     <li>Opsætning af printer</li>
@@ -158,17 +172,28 @@
    </div>
 
 
-   <div class="desktopservicebox">
-    <div class="it-tvtekst" id="APPLE">
+   <div class="desktopservicebox" id="apple">
+    <div class="it-tvtekst">
+        <p class="onlymobile" id="closex" onclick="closeinfo()">X</p>
         <h2>Apple produkter</h2>
         <p>Vi kan hjælpe med support til diverse Apple produkter.<br> vi kan tilbyde hjælp til opsætning, optimering osv. </p>
+        <div class="it-tvlistemobile">
+            <ul>
+                <li><h4>Vi kan hjælpe med:</h4></li>
+            <li>Iphone</li>   
+            <li>Macbook</li> 
+            <li>Imac</li>
+            <li>Ipad</li>
+            </ul>
+            </div>
         <div class="kontakt">
             <img src="images/nicolai.jpg">
             <a href="#contact.html"><button class="bluebuttonydelse">Kontakt Nicolai</button></a>
         </div>
         </div>
-        <div class="it-tvliste">
+        <div class="it-tvlistedesktop">
             <ul>
+        
             <li>Iphone</li>   
             <li>Macbook</li> 
             <li>Imac</li>
@@ -176,24 +201,33 @@
             </ul>
             </div>
 </div>
-<div class="desktopservicebox">
-    <div class="it-tvtekst" id="Alarmogsikkerhed">
+<div class="desktopservicebox" id="alarmogsikkerhed">
+    <div class="it-tvtekst">
+        <p class="onlymobile" id="closex" onclick="closeinfo()">X</p>
         <h2>Alarm og sikkerhed</h2>
-        <p>Ønsker du at beskytte dit hjem?<br> både når du er hjemme men også når du ikke er hjemme<br>
-            Så er Nookbox alarmsystemet en rigtig god mulighed.<br>
+        <p>Ønsker du at beskytte dit hjem?<br> både når du er hjemme, men også når du ikke er hjemme.<br>
+            Så er Nookbox alarmsystemet<br en rigtig god mulighed.<br>
             Med dette alarmsystem får du et intelligent system,<br> med rigtig mange muligheder.<br>
-            For mere info omkring vores alarmsystem,<br> er du velkommen til og kontakte os
+        
             
             </p>
             
-           
+            <div class="it-tvlistemobile">
+                <ul>
+                <li><h4>Ved køb af vores alarm får du:</h4></li>
+                <li>Opsætning af videoovervågning</li>   
+                <li>Opsætning af alarmsystemer</li> 
+                <li>Opsætning af dørsensor</li>
+                <li>Opsætning af dørkontakt</li>
+                </ul>
+                </div>
         <div class="kontakt">
             <img src="images/soren.jpg">
             <img src="images/nicolai.jpg">
             <a href="#contact.html"><button class="orangebuttonydelse">Kontakt os</button></a>
         </div>
         </div>
-        <div class="it-tvliste">
+        <div class="it-tvlistedesktop">
             <ul>
             <li>Opsætning af videoovervågning</li>   
             <li>Opsætning af alarmsystemer</li> 
@@ -202,16 +236,26 @@
             </ul>
             </div>
 </div>
-<div class="desktopservicebox">
-    <div class="it-tvtekst" id="Eloginstallation">
+<div class="desktopservicebox" id="eloginstallation">
+    <div class="it-tvtekst">
+        <p class="onlymobile" id="closex" onclick="closeinfo()">X</p>
         <h2>El og installation</h2>
-        <p>Hos Harder & Køhler kan vi også tilbyde en service inden for el-installation.</p>
+        <p>Hos Harder & Køhler<br> kan vi også tilbyde en service<br> inden for el-installation.</p>
+        <div class="it-tvlistemobile">
+            <ul>
+                <li><h4>Vi kan hjælpe med:</h4></li>
+            <li>Opsætning af lamper </li>   
+            <li>Montering af hvidevarer</li>
+            <li>El-installation</li> 
+            
+            </ul>
+            </div>
         <div class="kontakt">
             <img src="images/soren.jpg">
             <a href="#contact.html"><button class="bluebuttonydelse">Kontakt Søren</button></a>
         </div>    
     </div>
-        <div class="it-tvliste">
+        <div class="it-tvlistedesktop">
             <ul>
             <li>Opsætning af lamper </li>   
             <li>Montering af hvidevarer</li> 
@@ -220,7 +264,7 @@
             </div>
 </div>
 </section>
-
+<div class="contactydelse">
 <section class="contact">
 
     <h2>Kontakt os i dag!</h2>
@@ -238,6 +282,7 @@
     
     
     </section>
+</div>
 
     <script src="js/main.js"></script>
 </body>

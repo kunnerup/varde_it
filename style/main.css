@@ -861,10 +861,13 @@ width: 100%;
          display: none;
          background-color: var(--darkblue);
          text-align: center;
-         width: 100%;
-         margin-left: -5%;
+         width: 90%;
+         margin: auto;
+         box-shadow: var(--shadow);
+         padding: 2px;
          
      }
+     
      .it-tvlistedesktop{
          display: none;
      }
@@ -924,7 +927,29 @@ width: 100%;
         flex-direction: column;
         
     }
-    
+    #closex{
+        position: absolute;
+        right: 10px;
+top: 5px;
+        font-size: 35px;
+        margin-right: 2%;
+    }
+    .it-tvtekst{
+        margin-top: 40px;
+    }
+    .buttongrup h2{
+        text-align: center;
+        color: var(--lightorange);
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .customslider h3{
+        text-align: center;
+        margin-top: 5%;
+        color: var(--lightorange);
+        margin-bottom: -10%;
+        margin-top: 10%;
+    }
 
 
 /*--------------TABLET---------------------*/
@@ -1314,6 +1339,15 @@ transform: scale(1.05);
           flex-direction: row;
           
       }
+      #apple img, #alarmogsikkerhed img, #eloginstallation img, #ittv img{
+        height: 75px;
+        width: 75px;
+        border-radius: 50px;
+        margin: auto;
+        margin-top: 5%;
+        
+    }
+    
       .kontakt img{
           height: 75px;
           width: 75px;
@@ -1340,29 +1374,71 @@ transform: scale(1.05);
     }
     .bluebuttonydelse {
         font-size: 1.1em;
-        padding: 15px 15px 15px 15px;
+        padding: 15px 10px 15px 10px;
         border:none;
         background-color: var(--lightblue);
         color: white;
         font-family: headline;
-        width: 100%;
+       
         margin-top: 12%;
         max-width: 150px;
         cursor: pointer;
         margin-left: 10%;
+        margin-top: 25%;
     }
-    #apple, #alarmogsikkerhed, #eloginstallation, #ittv{
+     #alarmogsikkerhed, #ittv{
          display: flex;
          flex-direction: row;
          justify-content: space-around;
-        margin-top: 15%;
-        width: 100%;
-        height: 60vh;
+        margin-top: 5%;
+        margin-right: 50%;
+        width: 90%;
+        height: 55%;
         background-color:var(--darkblue);
         position: relative;
+        padding-bottom: 5%;
+        
        
         
     }
+    #apple, #eloginstallation{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+       margin-top: 5%;
+       margin-right: 50%;
+       width: 90%;
+       height: 55%;
+       padding-bottom: 5%;
+       background-color:var(--lightorange);
+       position: relative;
+       
+      
+       
+   }
+   #apple h2, #eloginstallation h2{
+       color: var(--darkblue)
+
+   }
+   #apple p, #eloginstallation p{
+    color: var(--darkblue)
+
+}
+#apple ul, #eloginstallation ul{
+    list-style-image: url(../images/Flueblue.png);
+    color: var(--darkblue);
+    margin-top: 100px;
+    
+
+}
+
+    
+   .it-tvlistemobile{display: none;}
+   .it-tvlistedesktop {
+       display: block;
+       color: var(--darkblue);
+   }
+   
     
    .servicebox1{
     display: flex;
@@ -1418,5 +1494,8 @@ transform: scale(1.05);
     .contact_form_box .orangebutton {
      margin: auto;
      margin-top: 15px;
+    }
+    .contactydelse{
+        margin-top: 200px;
     }
 }
