@@ -282,17 +282,64 @@ nav ul li:hover {
 
 
 /*-----------------FOOTER------------*/
-footer {
+footer{
     background-color: var(--darkblue);
-    width: 100%;
+width: 100%;
+padding-bottom: 50px;
+display: flex;
+
+}
+footer a{
+text-decoration: none;
+color: white;
+}
+footer div{
+width: 50%;
+color: white;
+display: flex;
+padding-top: 5%;
+width: 80%;
+color: white;
+font-size: 15px;
+flex-wrap: wrap;
+flex-direction: column;
+justify-content: space-around;
+margin: auto;
+}
+.venstrefooter ul{
+font-size: 15px;
+}
+.some{
+display: flex;
+flex-direction: row;
+width: 100%;
+}
+.some img{
+width: 40px;
+}
+
+footer ul{
+list-style-type: none;
+text-align: center;
 }
 
 footer img {
-    display: block;
-    width: 70%;
-    max-width: 300px;
-    margin: auto;
-    padding: 30px;
+width: 70px;
+max-width: 300px;
+margin: auto;
+padding: 30px;
+}
+.pris{
+color: orange;
+padding-top: 35px;
+
+}
+.telefon li{
+font-size: 25px;
+padding-bottom: 30px;
+}
+.mail li{
+font-size: 25px;
 }
 
 
@@ -722,6 +769,19 @@ width: 100%;
      max-width: 500px;
      margin: auto;
  }
+
+ /*OM-SIDEN*/
+#aboutpage{
+    width: 90%;
+    margin: auto;
+    line-height: 23px;
+    margin-top: 50px;
+}
+
+#aboutpage h2 {
+    margin-bottom: 25px;
+}
+
 
   /*KONTAKT*/
 .contact {
@@ -1214,7 +1274,22 @@ p {
 
 
      /*------------FOOTER DESKTOP-------------*/
+.some {
+    width: 50%;
+}
 
+footer .contact_form_box form textarea, footer .contact_form_box form input {
+    width: 55%;
+}
+
+footer .contact_form_box form textarea{
+    margin-bottom: 30px;
+}
+
+footer h2{
+    text-align: center;
+    color: white;
+}
 
     /*GENERAL DESKTOP*/
     .onlymobile{
