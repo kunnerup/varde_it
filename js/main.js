@@ -86,3 +86,27 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active2";
 }
+
+// popup
+
+function modalAndry() {
+    let andrydk = document.querySelector("#ITTV");
+    andrydk.style.display = "block";
+
+  }
+  function modalAndry() {
+    let andrydk = document.querySelector("#ITTV");
+    andrydk.style.display = "block";
+
+  }
+  function modalAndry() {
+    let andrydk = document.querySelector("#ITTV");
+    andrydk.style.display = "block";
+
+  }
+
+  function closeinfo() {
+    document.getElementById("ITTV").style.display = "none";
+    document.getElementById("APPLE").style.display = "none";
+    document.getElementById("APPLE").style.display = "none";
+  }
