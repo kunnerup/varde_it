@@ -2079,6 +2079,12 @@ width: 65%;
      /***displaynoneview*/
      .Appleprodukt, .Alarm, .El, .build{
          display: none;
+         padding-bottom: 5px;
+     }
+
+     #appleline, #itline, #alarmline, #buildline, #elline {
+         box-sizing: border-box;
+         padding-bottom: 3px;
      }
 
      #hideondesktop {display: none}
@@ -2101,9 +2107,7 @@ width: 65%;
         
     }
     
-     
-
-
+    
     .buttonmobile {
         display: none;
     }
@@ -2212,10 +2216,7 @@ width: 65%;
        margin-right: 50px;
       
        
-   }
-   
-   
-   
+   }   
     
    .servicebox1{
     display: flex;
