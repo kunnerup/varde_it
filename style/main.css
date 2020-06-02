@@ -298,8 +298,8 @@ font-size: 24px;
 }
 
 footer img {
-width: 20px;
-margin-right: 25px;
+width: 70px;
+margin: auto;
 }
 
 footer div{
@@ -349,6 +349,11 @@ padding-bottom: 30px;
 }
 .mail li a{
 font-size: 20px;
+}
+
+.mail img, .telefon img {
+    margin-right: 25px;
+    width: 20px;
 }
 
 
@@ -2085,6 +2090,10 @@ width: 65%;
      #appleline, #itline, #alarmline, #buildline, #elline {
          box-sizing: border-box;
          padding-bottom: 3px;
+     }
+
+     #itline {
+         border-bottom: 3px solid var(--lightorange);
      }
 
      #hideondesktop {display: none}
