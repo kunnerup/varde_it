@@ -1381,6 +1381,7 @@ footer ul {
     display: none;
     padding: 80px;
     text-align: center;
+    background-color: white;
 }
 
 /* næst og tilbage knap */
@@ -1417,7 +1418,7 @@ footer ul {
 .dot-container {
     text-align: center;
     padding: 20px;
-    background: #ddd;
+    background:var(--lightblue)
 }
 
 /* Selve kuglen med farve */
