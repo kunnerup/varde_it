@@ -1873,6 +1873,13 @@ footer h2, footer p{
         padding-left: 0;
         padding-right: 20px;
     }
+
+    .leftline a {
+        text-decoration: none;
+        color: var(--darkestblue);
+        font-weight: bold;
+    }
+
 #se_mere {
     margin-left: 0;
 }
