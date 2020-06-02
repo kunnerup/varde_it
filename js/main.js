@@ -66,7 +66,6 @@ function search(value) {
       filteredPosts.push(post);
     }
   }
-  console.log(filteredPosts);
   appendPosts(filteredPosts);
 }
 
@@ -146,7 +145,7 @@ function appendPostsByCategory(postsByCategory) {
 
 //costumslider service page
 
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -158,9 +157,9 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {
     slideIndex = 1
   }
@@ -230,6 +229,7 @@ function closeInformation() {
   alarmline.style.borderBottom = "none";
   elline.style.borderBottom = "none";
   buildline.style.borderBottom = "none";
+  appleline.style.borderBottom = "none";
 }
 
 function openIt() {
