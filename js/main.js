@@ -66,7 +66,6 @@ function search(value) {
       filteredPosts.push(post);
     }
   }
-  console.log(filteredPosts);
   appendPosts(filteredPosts);
 }
 
@@ -230,6 +229,7 @@ function closeInformation() {
   alarmline.style.borderBottom = "none";
   elline.style.borderBottom = "none";
   buildline.style.borderBottom = "none";
+  appleline.style.borderBottom = "none";
 }
 
 function openIt() {
