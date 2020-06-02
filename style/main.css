@@ -2265,17 +2265,26 @@ footer ul {
     #semereknap {
         margin-top: 10%;
     }
+    .overskrifandtext h2{
+        margin-bottom: 5%;
+    }
+    .overskrifandtextel h3{
+        margin-top: 2%;
+        font-size:30px;
+        color: var(--darkblue);
+        margin-bottom: 5%;
+    }
 
     .overskrifandtext p {
         width: 90%;
         margin: auto;
-        text-align: left;
+        text-align: center;
     }
 
     .overskrifandtextel p {
         width: 90%;
         margin: auto;
-        text-align: left;
+        text-align: center;
     }
 
     /***displaynoneview*/
@@ -2468,6 +2477,7 @@ footer ul {
         display: flex;
         flex-direction: row;
         width: 30%;
+        margin-left: 15%;
     }
 
     .buttonandimg img {
