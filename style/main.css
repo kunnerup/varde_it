@@ -1155,10 +1155,12 @@ left: -120px;
     .it-tvlistedesktopel{
         display: none;
         width: 30%;
+        margin-left: 60px;
     }
     .it-tvlistedesktopapple{
         display: none;
-        width: 30%;
+        
+        margin-left: 60px;
     }
     .picandboxs{display: none;}
     
@@ -1208,6 +1210,7 @@ left: -120px;
        
     }
     /* Slideshow containeren */
+    
     .slideshow-container {
         margin-top: 10%;
         position: relative;
@@ -1276,7 +1279,7 @@ left: -120px;
     .desktopservicebox{
         position:absolute;
         top: 100px;
-        left: 5%;
+        left: 0;
         background-color: var(--white);
         z-index: 500;
      }
@@ -1515,7 +1518,7 @@ left: -120px;
     .desktopservicebox {
         position: absolute;
         top: 200px;
-        left: 5%;
+        
        
         z-index: 500;
     }
@@ -1865,7 +1868,11 @@ transform: scale(1.05);
          border-color: var(--darkblue);
      }
      /* service veiw*/
-
+     .customslider{
+         width: 90%;
+         margin: auto;
+         max-width: 800px;
+     }
      .picandboxs{
          
          display: flex;
@@ -1983,13 +1990,16 @@ transform: scale(1.05);
          display: flex;
          flex-direction: row;
          justify-content: space-around;
+         margin: auto;
         margin-top: 5%;
-        margin-right: 50%;
+        
         width: 90%;
         height: 55%;
+        max-width: 1200px;
         background-color:var(--darkblue);
         position: relative;
         padding-bottom: 2%;
+       
         
        
         
@@ -1998,13 +2008,17 @@ transform: scale(1.05);
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-       margin-top: 5%;
-       margin-right: 50%;
-       width: 90%;
-       height: 50%;
-       padding-bottom: 2%;
-       background-color:var(--lightorange);
-       position: relative;
+        margin: auto;
+        margin-top: 5%;
+       
+        width: 90%;
+        height: 55%;
+        max-width: 1200px;
+        background-color: var(--lightorange);
+        position: relative;
+        padding-bottom: 2%;
+        
+    }
        
       
        
@@ -2027,12 +2041,12 @@ transform: scale(1.05);
 
 }
 #apple li{
-    margin-left: 50%;
+    margin-left: 30%;
 }
 #apple ul, #eloginstallation ul{
     list-style-image: url(../images/Flueblue.png);
     color: var(--darkblue);
-    margin-left: 50%;
+    
     width: 100%;
 }
 
@@ -2041,12 +2055,11 @@ transform: scale(1.05);
    .it-tvlistedesktop {
        display: block;
        color: var(--darkblue);
+       margin-right: 50px;
       
        
    }
-   .it-tvlistedesktopapple{
-       margin-left: 18%;
-   }
+   
    
    
     
