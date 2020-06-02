@@ -604,7 +604,7 @@ flex-wrap: wrap;
 #aboutusinner ul {
     list-style: circle;
     list-style-position: inside;
-    padding-bottom: 65px;
+    padding-bottom: 15px;
 }
 
 #aboutusinner h3, #aboutusinner h4, #aboutusinner p{
@@ -627,7 +627,7 @@ flex-direction: row-reverse;
     flex-direction: column;
 }
 
-#aboutusinner div div img {
+.bigportrait {
     width: 29%;
     height: 29%;
     border-radius: 50%;
@@ -635,6 +635,15 @@ flex-direction: row-reverse;
     border: 3px solid var(--lightorange);
     margin-right: -30px;
     margin-top: 65px;
+}
+
+#aboutusinner .private_some{
+display: none;
+}
+
+#aboutusinner .private_some img{
+width: 30px;
+margin: none;
 }
 
 #rightline {
@@ -669,6 +678,13 @@ font-style: italic;
     font-family: basic;
     font-weight: lighter;
     padding-bottom: 20px;
+}
+
+.column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
 }
 
 #contactfrontpage {
@@ -1926,6 +1942,13 @@ width: 65%;
         padding-bottom: 50px;
     }
 
+    #aboutusinner .private_some{
+display: flex;
+flex-direction: row;
+    }
+    #aboutusinner .private_some img{
+    border: none;
+    }
     #endingline {
         display: none;
     }
