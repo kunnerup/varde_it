@@ -1817,6 +1817,14 @@ width: 65%;
  margin-left: 45.55%;
 transform: scale(1.05);
     }
+
+    #giantlogo {
+        height: 60vh;
+        position: absolute;
+        top: 20vh;
+        right: -50px;
+        opacity: 0.1;
+    }
  /*-------service desktop---------*/
  .overkasse{flex-direction: row;
         
