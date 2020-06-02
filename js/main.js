@@ -86,7 +86,7 @@ function getCategories() {
 
 getCategories();
 
-// Appende genrene til dropdown menuen
+// Appende kategorierne til dropdown menuen
 function appendCategories(categories) {
   let byCategoryHtml = "";
   for (let category of categories) {
@@ -108,7 +108,6 @@ function categorySelected(categoryId) {
         return response.json();
       })
       .then(function (posts) {
-        console.log(posts);
         appendPostsByCategory(posts);
         showLoader(false);
       });
