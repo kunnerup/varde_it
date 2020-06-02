@@ -780,6 +780,10 @@ width: 100%;
     margin-top: 50px;
 }
 
+#aboutpage div {
+    max-width: 500px;
+}
+
 #aboutpage h2 {
     margin-bottom: 25px;
 }
@@ -2013,12 +2017,6 @@ transform: scale(1.05);
     color: var(--darkblue);
     margin-left: 50%;
     width: 100%;
-   
-   
-   
-   
-    
-
 }
 
     
@@ -2040,15 +2038,9 @@ transform: scale(1.05);
    .servicebox1{
     display: flex;
     flex-direction: row;
-    
-    
     flex-wrap: nowrap;
     height: 100%;
-    
     margin: auto;
-    
-    
-    
     }
     .kasse1-service{
         margin: auto;
@@ -2057,9 +2049,7 @@ transform: scale(1.05);
        height: 40%;
        margin: 2%;
        display: flex;
-       flex-direction: column-reverse;
-       
-       
+       flex-direction: column-reverse; 
     }
     .kasse1-service a{
         display: flex;
@@ -2149,10 +2139,23 @@ transform: scale(1.05);
     /*ABOTU DESKTOP*/
     #aboutpage{
         flex-direction: row;
+        justify-content: center;
         margin-bottom: 150px;
     }
 
     #aboutpage div {
         width: 50%;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    #solution{
+        width: 600px;
+        margin: auto;
+        margin-top: 140px;
+    }
+
+    #solution h2{
+        text-align: center;
     }
 }
