@@ -825,8 +825,16 @@ width: 100%;
     }
     
     
-    
-    
+   .kontaktbillede{
+       display: none;
+   } 
+   .buttonandimgdektop{
+       display: none;
+   }
+   .buttonandimgdektop img{
+       display: none;
+   }
+   .desktoppng{display: none;}
     .overkasse{
         display: flex;
         flex-direction: column;
@@ -999,7 +1007,23 @@ width: 100%;
         border-radius: 5px;
         
     }
-    .kontakt {
+    .bluebuttonydelselistbox{ font-size: 1.1em;
+        padding: 15px 15px 15px 15px;
+        border: none;
+        background-color: var(--darkblue);
+        color: white;
+        font-family: headline;
+        width: 200px;
+        margin-bottom: 10%;
+        margin-top: 10%;
+        max-width: 250px;
+        cursor: pointer;
+        
+        
+        border-radius: 5px;
+        
+    }}
+    .kontaktmobile {
         display: flex;
         flex-direction: column;
         
@@ -1122,7 +1146,13 @@ width: 100%;
 
 /*--------------TABLET---------------------*/
 @media (min-width: 600px) {
-
+    .desktopservicebox {
+        position: absolute;
+        top: 200px;
+        left: 5%;
+       
+        z-index: 500;
+    }
   }
   
 
@@ -1432,7 +1462,7 @@ transform: scale(1.05);
      .desktopservicebox ul {
         direction:rtl;
         list-style-image: url('../images/flueorange.png');
-        margin-top:20%;
+        margin-top:5%;
         color:var(--lightorange);
         font-size: 2em;
 
@@ -1446,8 +1476,9 @@ transform: scale(1.05);
          flex-direction: row;
          justify-content: center;
          margin: auto;
-         margin-top: 2%;
-         margin-right: 15%;
+         
+
+         
      }
      .pic {
          position: absolute;
@@ -1464,8 +1495,8 @@ transform: scale(1.05);
          flex-direction: column;
          align-items: center;
          
-         margin-left: 60%;
-         margin-top: 2%;
+         margin-left: 600px;
+         margin-top: 20px;
          position: relative;
          z-index: 2;
          height: 350px;
@@ -1502,16 +1533,15 @@ transform: scale(1.05);
       .it-tvtekst{
           text-align: center;
       }
-      .kontakt {
-          display: flex;
-          flex-direction: row;
-          
+      .mobilkontaktpic{
+          display: none;
       }
       #apple img, #alarmogsikkerhed img, #eloginstallation img, #ittv img{
         height: 75px;
         width: 75px;
         border-radius: 50px;
         margin: auto;
+        margin-left: 5%;
         
         
     }
@@ -1519,9 +1549,10 @@ transform: scale(1.05);
      
 
 
-      .kontakt button{
-          margin-left: 20%;
-      }
+    .buttonmobile {
+        display: none;
+    }
+    
 
       /**** buttons*/
       .orangebuttonydelse {
@@ -1537,6 +1568,7 @@ transform: scale(1.05);
         cursor: pointer;
         margin-left: 30%;
     }
+   
     .bluebuttonydelse {
         font-size: 1.1em;
         padding: 15px 10px 15px 10px;
@@ -1548,8 +1580,8 @@ transform: scale(1.05);
         margin-top: 12%;
         max-width: 250px;
         cursor: pointer;
-        margin-left: 10%;
-        margin-top: 25%;
+        margin-left: 30%;
+        margin-top: 17%;
     }
      #alarmogsikkerhed, #ittv{
          display: flex;
@@ -1581,6 +1613,7 @@ transform: scale(1.05);
       
        
    }
+   
    #apple h2, #eloginstallation h2{
        color: var(--darkblue)
 
@@ -1589,10 +1622,18 @@ transform: scale(1.05);
     color: var(--darkblue)
 
 }
+#apple li{
+    margin-left: 50%;
+}
 #apple ul, #eloginstallation ul{
     list-style-image: url(../images/Flueblue.png);
     color: var(--darkblue);
-    margin-top: 100px;
+    margin-left: 50%;
+    width: 100%;
+   
+   
+   
+   
     
 
 }
@@ -1602,6 +1643,14 @@ transform: scale(1.05);
    .it-tvlistedesktop {
        display: block;
        color: var(--darkblue);
+      
+       
+   }
+   .it-tvlistedesktopapple{
+       margin-left: 18%;
+   }
+   .it-tvlistedesktopel{
+       width: 30%;
    }
    
     
@@ -1636,6 +1685,30 @@ transform: scale(1.05);
         background-color: white;
         
     }
+    .buttonandimg{
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+    }
+    .buttonandimg img{
+        display: block;
+    }
+    .overskrifandtext{
+        display: flex;
+        flex-direction: column;
+        width: 48%;
+        margin-right: 10%;
+    }
+    .overskrifandtextel{
+        width: 48%;
+        margin-right: 25%;
+
+    }
+    .skriftandliste {display: flex;
+        flex-direction: row;
+       
+        
+    }
     /*KONTAKT DESKTOP*/
     .contact .contact_form_box form {
         flex-direction: row;
@@ -1661,7 +1734,7 @@ transform: scale(1.05);
      margin-top: 15px;
     }
     #contactydelse{
-        margin-top: 200px;}
+        margin-top: 300px;}
 
 
     /*DESKTOP BLOG*/
