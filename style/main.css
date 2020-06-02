@@ -1647,6 +1647,21 @@ transform: scale(1.05);
         font-size: 2em;
 
         
+     } 
+     /** ydelse**/
+     #option{
+         display: flex;
+         flex-direction: row;
+         
+     }
+     
+      
+     .Erhverv, .privat{
+         width: 100%;
+         height: 100%;
+         margin-top: 18%;
+         border: 3xp solid;
+         border-color: var(--darkblue);
      }
      /* service veiw*/
 
