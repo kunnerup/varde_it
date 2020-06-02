@@ -1299,9 +1299,14 @@ footer ul {
     flex-wrap: wrap;
     height: 100%;
     margin: auto;
-
 }
 
+.overskrifandtext p {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    color: var(--lightorange)
+}
 
 .it-tvlistedesktopel {
     display: none;
@@ -1438,6 +1443,11 @@ footer ul {
     left: 5%;
     background-color: var(--white);
     z-index: 500;
+    padding-bottom: 35px;
+}
+
+#paddingtop{
+    margin-top: 90px;
 }
 
 #apple,
@@ -1457,50 +1467,42 @@ footer ul {
     display: none;
 }
 
-#apple img,
-#alarmogsikkerhed img,
-#eloginstallation img,
-#ittv img {
+#apple img, #alarmogsikkerhed img, #eloginstallation img, #ittv img {
     height: 50%;
     width: 100%;
     margin-top: -15%;
     border-radius: 25px 25px 0px 0px;
 }
 
-#apple h2,
-#alarmogsikkerhed h2,
-#eloginstallation h2,
-#ittv h2 {
+#apple h2, #alarmogsikkerhed h2, #eloginstallation h2, #ittv h2 {
     color: var(--lightorange);
     margin-top: 5%;
     font-size: 35px;
 
 }
 
-#apple h4,
-#alarmogsikkerhed h4,
-#eloginstallation h4,
-#ittv h4 {
+#apple h4, #alarmogsikkerhed h4, #eloginstallation h4, #ittv h4 {
     color: var(--lightorange);
     margin-top: 5%;
 }
 
-#apple p,
-#alarmogsikkerhed p,
-#eloginstallation p,
-#ittv p {
+#skriftandliste p{
     color: var(--lightorange);
-    font-size: 18px;
+    font-size: 182px;
 }
 
 .it-tvlistemobile h4 {
     text-align: center;
     font-size: 25px;
 }
+.it-tvlistemobile p{
+   color: var(--lightorange);
+}
 
-.it-tvlistemobile ul {
+.it-tvlistemobile ul li {
     color: var(--lightorange);
     list-style: none;
+    font-size: 18px;
 
 }
 
@@ -1535,8 +1537,8 @@ footer ul {
     color: white;
     font-family: headline;
     width: 200px;
-    margin-bottom: 10%;
-    margin-top: 10%;
+    margin-bottom: 30px;
+    margin-top: 30px;
     max-width: 250px;
     cursor: pointer;
     border-radius: 5px;
@@ -1597,8 +1599,11 @@ footer ul {
 
 #closex {
     position: absolute;
-    right: 10px;
-    top: 11px;
+    right: 30px;
+    top: 0;
+    font-size: 50px;
+    color: var(--lightorange);
+    font-weight: bolder;
 }
 
 .it-tvtekst {
@@ -1624,10 +1629,7 @@ footer ul {
     margin-top: 5%;
     color: var(--darkblue);
 }
-.overskrifandtextel h3{
-    color: var(--lightorange);
-}
-.overskrifandtextel h4{
+.overskrifandtextel h3, .overskrifandtextel h4, .overskrifandtextel p, .overskriftandtext p{
     color: var(--lightorange);
 }
 
@@ -2282,12 +2284,6 @@ footer ul {
         margin-bottom: 5%;
     }
 
-    .overskrifandtext p {
-        width: 90%;
-        margin: auto;
-        text-align: center;
-    }
-
     .overskrifandtextel p {
         width: 90%;
         margin: auto;
@@ -2452,6 +2448,7 @@ footer ul {
         display: block;
         color: var(--darkblue);
         margin-right: 50px;
+        width: 30%;
     }
 
     .servicebox1 {

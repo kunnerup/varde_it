@@ -228,10 +228,9 @@ function closeInformation() {
   elek.style.display = "none";
   build.style.display = "none";
   itline.style.borderBottom = "none";
-  appleline.style.borderBottom = "none";
+  alarmline.style.borderBottom = "none";
   elline.style.borderBottom = "none";
   buildline.style.borderBottom = "none";
-  alarmline.style.borderBottom = "none";
 }
 
 function openIt() {
