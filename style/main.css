@@ -1945,6 +1945,7 @@ width: 65%;
     #aboutusinner .private_some{
 display: flex;
 flex-direction: row;
+width: 50%;
     }
     #aboutusinner .private_some img{
     border: none;
