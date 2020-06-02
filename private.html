@@ -2,6 +2,7 @@
 <!--SERVICEPAGE-->
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,8 @@
     <link rel="stylesheet" href="style/main.css">
     <link rel="icon" href="favicon.ico" type="image/ico" sizes="16x16">
 </head>
-<body> 
+
+<body>
     <nav>
         <div id="burger" onclick="openMenu()">
             <span></span>
@@ -19,12 +21,16 @@
         </div>
 
         <a href="/"><img src="images/Logo_white.png" alt="Harder&Køhler logo"></a>
-        <ul id="menu"> 
+        <ul id="menu">
             <li><a href="/">Hjem</a></li>
             <li id="ydelser" class="onlydesktop"><a href="services.html"><span class="active">Ydelser</span></a>
                 <ul class="dropdown">
-                    <a href="Private.html"><li>Privat</li></a>
-                    <a href="company.html"><li>Erhverv</li></a>
+                    <a href="Private.html">
+                        <li>Privat</li>
+                    </a>
+                    <a href="company.html">
+                        <li>Erhverv</li>
+                    </a>
                 </ul>
             </li>
             <li class="onlymobile"> <a href="Private.html">Privat</a></li>
@@ -36,416 +42,456 @@
         </ul>
 
     </nav>
-    
+
 
     <section class="buttongrup">
-    <h2>Ydelser / Privat</h2>
-<div class="overkasse">
-<div class="servicebox1">
+        <h2>Ydelser / Privat</h2>
+        <div class="overkasse">
+            <div class="servicebox1">
 
-    <div class="kasse1-service" id="hideondesktop" onclick="modalIt()"><a><p>IT og TV</p>
-    <img src="images/computer.png"></a></div>
-    <div class="kasse1-service" id="hideonmobile" onclick="openIt()"><a><p id="itline">IT, Computer, TV og lyd</p>
-        <img src="images/computer.png"></a></div>
+                <div class="kasse1-service" id="hideondesktop" onclick="modalIt()"><a>
+                        <p>IT og TV</p>
+                        <img src="images/computer.png">
+                    </a></div>
+                <div class="kasse1-service" id="hideonmobile" onclick="openIt()"><a>
+                        <p id="itline">IT, Computer, TV og lyd</p>
+                        <img src="images/computer.png">
+                    </a></div>
 
-    <div class="kasse1-service" id="hideondesktop" onclick="modalApple()"><a><p>Apple produkter</p>
-        <img src="images/apple.png"></a></div>
-        <div class="kasse1-service" id="hideonmobile" onclick="openApple()"><a><p id="appleline">Apple produkter</p>
-            <img src="images/apple.png"></a></div>
+                <div class="kasse1-service" id="hideondesktop" onclick="modalApple()"><a>
+                        <p>Apple produkter</p>
+                        <img src="images/apple.png">
+                    </a></div>
+                <div class="kasse1-service" id="hideonmobile" onclick="openApple()"><a>
+                        <p id="appleline">Apple produkter</p>
+                        <img src="images/apple.png">
+                    </a></div>
 
-    <div class="kasse1-service" id="hideondesktop" onclick="modalAlarm()"><a><p>Alarm og sikkerhed</p>
-        <img src="images/overvaagning.png"></a></div>
-        <div class="kasse1-service" id="hideonmobile" onclick="openAlarm()"><a><p id="alarmline">Alarm og sikkerhed</p>
-            <img src="images/overvaagning.png"></a></div>
+                <div class="kasse1-service" id="hideondesktop" onclick="modalAlarm()"><a>
+                        <p>Alarm og sikkerhed</p>
+                        <img src="images/overvaagning.png">
+                    </a></div>
+                <div class="kasse1-service" id="hideonmobile" onclick="openAlarm()"><a>
+                        <p id="alarmline">Alarm og sikkerhed</p>
+                        <img src="images/overvaagning.png">
+                    </a></div>
 
-    <div class="kasse1-service" id="hideondesktop" onclick="modalEl()"><a><p>El og installation</p>
-        <img src="images/el.png"></a></div>
-        <div class="kasse1-service" id="hideonmobile" onclick="openEl()"><a><p id="elline">El og installation</p>
-            <img src="images/el.png"></a></div>
+                <div class="kasse1-service" id="hideondesktop" onclick="modalEl()"><a>
+                        <p>El og installation</p>
+                        <img src="images/el.png">
+                    </a></div>
+                <div class="kasse1-service" id="hideonmobile" onclick="openEl()"><a>
+                        <p id="elline">El og installation</p>
+                        <img src="images/el.png">
+                    </a></div>
 
-        <div class="kasse1-service" id="hideondesktop"><a href="/build.html"><p>Byg din computer</p>
-            <img src="images/computer.png"></a></div>
-            <div class="kasse1-service" id="hideonmobile" onclick="openBuild()"><a><p id="buildline">Byg din computer</p>
-                <img src="images/computer.png"></a></div>
-</div>
-<!---<div class="kasse3-service"><button>El og installation
+                <div class="kasse1-service" id="hideondesktop"><a href="/build.html">
+                        <p>Byg din computer</p>
+                        <img src="images/computer.png">
+                    </a></div>
+                <div class="kasse1-service" id="hideonmobile" onclick="openBuild()"><a>
+                        <p id="buildline">Byg din computer</p>
+                        <img src="images/computer.png">
+                    </a></div>
+            </div>
+            <!---<div class="kasse3-service"><button>El og installation
     <img src="images/el.png"></button></div> -->
-</div>
-</div>
-</section>
-<div class="tvveiw">
-<section class="picandboxs">
-<div class="pic"><img src="images/Mac.png"></div>
-<div class="listbox">
-    <h4>IT og TV</h4>
-    <ul>
-        <li>Antennestik</li>   
-    <li>Opsætning af Computer</li> 
-    <li>Opsætning af printer</li>
-    <li>Optimering af netværk</li>
-    </ul>
-    <a href="#ittv"><button class="bluebuttonydelselistbox">Se mere</button></a>
-</div>
-</section>
-</div>
-
-<div class="Appleprodukt">
-    <section class="picandboxs">
-    <div class="pic"><img src="images/Mac.png"></div>
-    <div class="listbox">
-        <h4>Apple produkter</h4>
-        <ul>
-            <li>iPhone</li>   
-            <li>Macbook</li> 
-            <li>iMac</li>
-            <li>iPad</li>
-        </ul>
-        <a href="#apple"><button class="bluebuttonydelselistbox">Se mere</button></a>
-    </div>
+        </div>
+        </div>
     </section>
+    <div class="tvveiw">
+        <section class="picandboxs">
+            <div class="pic"><img src="images/Mac.png"></div>
+            <div class="listbox">
+                <h4>Computer, IT & TV</h4>
+                <ul>
+                    <li>Antennestik</li>
+                    <li>Opsætning af Computer</li>
+                    <li>Opsætning af printer</li>
+                    <li>Optimering af netværk</li>
+                </ul>
+                <a href="#ittv"><button class="bluebuttonydelselistbox">Se mere</button></a>
+            </div>
+        </section>
+    </div>
+
+    <div class="Appleprodukt">
+        <section class="picandboxs">
+            <div class="pic"><img src="images/Mac.png"></div>
+            <div class="listbox">
+                <h4>Apple produkter</h4>
+                <ul>
+                    <li>iPhone</li>
+                    <li>Macbook</li>
+                    <li>iMac</li>
+                    <li>iPad</li>
+                </ul>
+                <a href="#apple"><button class="bluebuttonydelselistbox">Se mere</button></a>
+            </div>
+        </section>
     </div>
 
     <div class="Alarm">
         <section class="picandboxs">
-        <div class="pic"><img src="images/Mac.png"></div>
-        <div class="listbox">
-            <h4>Alarm og sikkerhed</h4>
-            <ul>
-                
-                <li>Opsætning af videoovervågning</li>   
-            <li>Opsætning af alarmsystemer</li> 
-            <li>Opsætning af dørsensor</li>
-            <li>Opsætning af overvågning</li>
-            </ul>
-            <a href="#alarmogsikkerhed"><button class="bluebuttonydelselistbox">Se mere</button></a>
-        </div>
-        </section>
-        </div>
+            <div class="pic"><img src="images/Mac.png"></div>
+            <div class="listbox">
+                <h4>Alarm og sikkerhed</h4>
+                <ul>
 
-        <div class="El">
-            <section class="picandboxs">
+                    <li>Opsætning af videoovervågning</li>
+                    <li>Opsætning af alarmsystemer</li>
+                    <li>Opsætning af dørsensor</li>
+                    <li>Opsætning af overvågning</li>
+                </ul>
+                <a href="#alarmogsikkerhed"><button class="bluebuttonydelselistbox">Se mere</button></a>
+            </div>
+        </section>
+    </div>
+
+    <div class="El">
+        <section class="picandboxs">
             <div class="pic"><img src="images/Mac.png"></div>
             <div class="listbox">
                 <h4>El og installation</h4>
                 <ul>
-                    <li>Opsætning af lamper </li>   
-            <li>Montering af hvidevarer</li> 
+                    <li>Opsætning af lamper </li>
+                    <li>Montering af hvidevarer</li>
                 </ul>
                 <a href="#eloginstallation"><button class="bluebuttonydelselistbox">Se mere</button></a>
             </div>
-            </section>
+        </section>
+    </div>
+
+    <div class="build">
+        <section class="picandboxs">
+            <div class="pic"><img src="images/Mac.png"></div>
+            <div class="listbox">
+                <h4>Byg din egen computer</h4>
+                <ul>
+                    <li>Vælg model</li>
+                    <li>Vælg indmad</li>
+                    <li>Skræddersyet til dit behov</li>
+                </ul>
+                <a href="build.html"><button class="bluebuttonydelselistbox">Se mere</button></a>
+            </div>
+        </section>
+    </div>
+
+    <section class="customslider">
+        <h3>Det siger vores kunder:</h3>
+        <div class="slideshow-container">
+
+            <div class="mySlides">
+                <q>Jeg er ikke af nyere dato, faktisk langt op i pensionsalderen, men driver dog stadig lidt virksomhed
+                    og har flere gange haft behov for IT hjælp. Den har jeg fået fra Nicolai Thaysen Køhler, som har
+                    været hurtig til at komme og har løst mine problemer på bedste vis til min fulde tilfredshed.</q>
+                <p class="author">- Søren Kjær</p>
             </div>
 
-            <div class="build">
-                <section class="picandboxs">
-                <div class="pic"><img src="images/Mac.png"></div>
-                <div class="listbox">
-                    <h4>Byg din egen computer</h4>
-                    <ul>
-                        <li>Vælg model</li>   
-                <li>Vælg indmad</li> 
-                <li>Skræddersyet til dit behov</li> 
-                    </ul>
-                    <a href="build.html"><button class="bluebuttonydelselistbox">Se mere</button></a>
-                </div>
-                </section>
-                </div>
+            <div class="mySlides">
+                <q>Da 4 af vores 5 antennestik lige pludselig ikke fungerede blev det svært at finde en fagmand i Varde.
+                    Hvem skulle vi ringe til?
+                    Tilfældigt og heldigvis fandt jeg Varde TV & IT Service under Varde Antenneforenings hjemmeside. Vi
+                    fik ret hurtigt besøg af en meget venlig ung mand, Nicolai, der ret hurtigt fik ordnet vores problem
+                    efter at jeg havde sendt ham på en ubehagelig og ret unødvendig tur ind over vores loft – beklager
+                    Nicolai. Oveni det hele fik vi også indstillet alle vores kanaler rigtigt. Ingen tvivl – vi ringer
+                    også næste gang efter Nicolai.</q>
+                <p class="author">- Ina de Fries</p>
+            </div>
 
-<section class="customslider">
-    <h3>Det siger vores kunder:</h3>
-<div class="slideshow-container">
-   
-    <div class="mySlides">
-      <q>Jeg er ikke af nyere dato, faktisk langt op i pensionsalderen, men driver dog stadig lidt virksomhed og har flere gange haft behov for IT hjælp. Den har jeg fået fra Nicolai Thaysen Køhler, som har været hurtig til at komme og har løst mine problemer på bedste vis til min fulde tilfredshed.</q>
-      <p class="author">- Søren Kjær</p>
-    </div>
-    
-    <div class="mySlides">
-      <q>Da 4 af vores 5 antennestik lige pludselig ikke fungerede blev det svært at finde en fagmand i Varde. Hvem skulle vi ringe til?
-        Tilfældigt og heldigvis fandt jeg Varde TV & IT Service under Varde Antenneforenings hjemmeside. Vi fik ret hurtigt besøg af en meget venlig ung mand, Nicolai, der ret hurtigt fik ordnet vores problem efter at jeg havde sendt ham på en ubehagelig og ret unødvendig tur ind over vores loft – beklager Nicolai. Oveni det hele fik vi også indstillet alle vores kanaler rigtigt. Ingen tvivl – vi ringer også næste gang efter Nicolai.</q>
-      <p class="author">- Ina de Fries</p>
-    </div>
-    
-   
-    
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-    
-    </div>
-    
-    <div class="dot-container">
-      <span class="dot" onclick="currentSlide(1)"></span> 
-      <span class="dot" onclick="currentSlide(2)"></span> 
-    
-    </div>
-</section>
-<section class="moreinfogrup">
-   <div class="desktopservicebox"  id="ittv">
-    <div class="it-tvtekst">
-        <p class="onlymobile" id="closex" onclick="closeinfo()">X</p>
-        <div  class="kontaktmobil1">
-            <img class="mobilkontaktpic" src="images/laptopmobil.png">
-            
-            
+
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
         </div>
-        <div>
-            <div class="skriftandliste">
-        <div class="overskrifandtext">
-            <h2>TV OG IT SUPPORT</h2>
-            <p>hos varde it har vi mange års erfaring inden for tv, antennestik, <br>nætværk og Android-mobiler. </p>
-    </div>
-            
-           
-            <div class="it-tvlistemobile">
-                <ul>
-                    <li><h4>Vi kan tilbyde:</h4></li>
-                    <li>- Tv løsninger,</li> 
-                    <li>- Netværk,</li>
-                    <li>- Computere/printer,</li>
-                    <li>- Køb af tv/lydsystemer/
-                        computere.</li>
-                    <li>Og meget mere</li>
+
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+
+        </div>
+    </section>
+    <section class="moreinfogrup">
+        <div class="desktopservicebox" id="ittv">
+            <div class="it-tvtekst">
+                <p class="onlymobile" id="closex" onclick="closeinfo()">X</p>
+                <div class="kontaktmobil1">
+                    <img class="mobilkontaktpic" src="images/laptopmobil.png">
+
+
                 </div>
-                <div class="it-tvlistedesktop">
-                    <ul>
-                        <li>Tv løsninger</li> 
-                        <li>Netværk</li>
-                        <li>Computere</li>
-                        <li>Tv/lydsystemer/
-                            computere.</li>
-                        <li>Og meget mere</li>
-                    </div>
+                <div>
+                    <div class="skriftandliste">
+                        <div class="overskrifandtext">
+                            <h2>TV OG IT SUPPORT</h2>
+                            <p>Hos Varde Service har vi mange års erfaring inden for TV, antennestik, nætværk og
+                                Android-mobiler. </p>
+                        </div>
+
+
+                        <div class="it-tvlistemobile">
+                            <ul>
+                                <li>
+                                    <h4>Vi kan tilbyde:</h4>
+                                </li>
+                                <li>- TV-løsninger,</li>
+                                <li>- Netværk</li>
+                                <li>- Computere/printer</li>
+                                <li>- Køb af TV/lydsystemer.</li>
+                                <li>Og meget mere..</li>
+                        </div>
+                        <div class="it-tvlistedesktop">
+                            <ul>
+                                <li>TV-løsninger</li>
+                                <li>Netværk</li>
+                                <li>Computere</li>
+                                <li>TV/Lydsystemer</li>
+                                <li>Og meget mere..</li>
+                        </div>
                     </div>
                 </div>
                 <div class="buttonandimg">
                     <img class="desktoppng" src="images/nicolai.jpg">
-                    
+
                     <a href="tel:77 34 88 85"><button class="orangebuttonydelse">Kontakt Nicolai</button></a>
                 </div>
             </div>
-                    
-                
+
+
         </div>
-    </div>
-</div>
-
-
-
-   <div class="desktopservicebox" id="apple">
-    <div class="it-tvtekst">
-        <p class="onlymobile" id="closex" onclick="closeinfo()">X</p>
-        <div  class="kontaktmobil1">
-            <img class="mobilkontaktpic" src="images/Appleprodukt.png">
-            
-            
         </div>
-        <div>
-            <div class="skriftandliste">
-        <div class="overskrifandtext">
-            <h2>Apple produkter</h2>
-            <p>Vi kan hjælpe med support til diverse Apple produkter. vi kan tilbyde hjælp til opsætning, optimering osv. </p>
-    </div>
-            
-           
-            <div class="it-tvlistemobile">
-                <ul>
-                    <li><h4>Vi kan hjælpe med:</h4></li>
-                <li>- Iphone</li>   
-                <li>- Macbook</li> 
-                <li>- Imac</li>
-                <li>- Ipad</li>
-                </ul>
+        </div>
+
+
+
+        <div class="desktopservicebox" id="apple">
+            <div class="it-tvtekst">
+                <p class="onlymobile" id="closex" onclick="closeinfo()">X</p>
+                <div class="kontaktmobil1">
+                    <img class="mobilkontaktpic" src="images/Appleprodukt.png">
+
+
                 </div>
-                <div class="it-tvlistedesktopapple">
-                    <ul>
-                        <li>Iphone</li>   
-                        <li>Macbook</li> 
-                        <li>Imac</li>
-                        <li>Ipad</li>
-                        
-                    </ul>
+                <div>
+                    <div class="skriftandliste">
+                        <div class="overskrifandtext">
+                            <h2>Apple produkter</h2>
+                            <p>Vi kan hjælpe med support til en lang række Apple produkter. Vi tilbyder blandt andet
+                                hjælp til opsætning og optimering.</p>
+                        </div>
+
+
+                        <div class="it-tvlistemobile">
+                            <ul>
+                                <li>
+                                    <h4>Vi kan hjælpe med:</h4>
+                                </li>
+                                <li>- iPhone</li>
+                                <li>- Macbook</li>
+                                <li>- iMac</li>
+                                <li>- iPad</li>
+                            </ul>
+                        </div>
+                        <div class="it-tvlistedesktopapple">
+                            <ul>
+                                <li>iPhone</li>
+                                <li>Macbook</li>
+                                <li>iMac</li>
+                                <li>iPad</li>
+
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-                    
+
                 <div class="buttonandimg">
-                <img class="desktoppng" src="images/nicolai.jpg">
-                
-                <a href="tel:77 34 88 85"><button class="bluebuttonydelse">Kontact Nicolai</button></a>
-            </div>
-        </div>
-</div>
-<div class="desktopservicebox" id="alarmogsikkerhed">
-    <div class="it-tvtekst">
-        <p class="onlymobile" id="closex" onclick="closeinfo()">X</p>
-        <div  class="kontaktmobil1">
-            <img class="mobilkontaktpic" src="images/NookBox - Modern House.png">
-            
-            
-        </div>
-        <div>
-            <div class="skriftandliste">
-        <div class="overskrifandtext">
-        <h2>Alarm og sikkerhed</h2>
-        <p>Ønsker du at beskytte dit hjem?<br>
-        
-            Hvis du vil øge sikkerhed og skabe en mere tryg hverdagen,<br> kan Søren og Nicolai hjælpe dig godt på vej med vejledning<br> og opsætning af alarmsystemer og overvågning.
-            
-        </p>
-    </div>
-            
-           
-            <div class="it-tvlistemobile">
-                <ul>
-                <li><h4>Ved køb af alarm får du:</h4></li>
-                <li>- Opsætning af videoovervågning</li>   
-                <li>- Opsætning af alarmsystemer</li> 
-                <li>- Opsætning af dørsensor</li>
-                <li>- Opsætning af dørkontakt</li>
-                </ul>
-                </div>
-                <div class="it-tvlistedesktop">
-                    <ul>
-                    <li>Opsætning af videoovervågning</li>   
-                    <li>Opsætning af alarmsystemer</li> 
-                    <li>Opsætning af dørsensor</li>
-                    <li>Opsætning af dørkontakt</li>
-                    </ul>
-                    </div>
-                </div>
-            </div>
-                    
-                <div class="buttonandimg">
-                <img class="desktoppng" src="images/nicolai.jpg">
-                <img class="desktoppng" src="images/soren.jpg">
-                <a href="tel:77 34 88 85"><button class="orangebuttonydelse">Kontakt os</button></a>
-            </div>
-        </div>
-       
-            
-</div>
-<div class="desktopservicebox" id="eloginstallation">
-    <div class="it-tvtekst">
-        <p class="onlymobile" id="closex" onclick="closeinfo()">X</p>
-        <div  class="kontaktmobil1">
-            <img class="mobilkontaktpic" src="images/Eltavle.png">
-            
-            
-        </div>
-        <div>
-            <div class="skriftandliste">
-        <div class="overskrifandtextel">
-            <h2>El og installation</h2>
-            <p>Hos Harder & Køhler kan vi også nu tilbyde EL service inden for el-installation.</p>
-    </div>
-            
-           
-            <div class="it-tvlistemobile">
-                <ul>
-                    <li><h4>Vi kan hjælpe med:</h4></li>
-                <li>- A/V løsninger </li>   
-                <li>- Montering af hvidevarer</li> 
-                <li>- EL materialer</li>
-                <li>- EL arbejde</li> 
-                
-                </ul>
-                </div>
-                <div class="it-tvlistedesktopel">
-                    <ul>
-                        <li>A/V løsninger </li>   
-                        <li>Montering af hvidevarer</li> 
-                        <li>EL materialer</li>
-                        <li>EL arbejde</li> 
-                        
-                        </ul>
-                    </div>
-                </div>
-            </div>
-                    
-            <div class="buttonandimg">
-                
-                <img class="desktoppng" src="images/soren.jpg">
-                <a href="tel:77 34 88 85"><button class="bluebuttonydelse">Kontakt Søren</button></a>
-            </div>
-            </div>
-        </div>
-</div>
-</section>
-<div id="contactydelse">
-<section class="contact">
+                    <img class="desktoppng" src="images/nicolai.jpg">
 
-    <h2>Kontakt os i dag!</h2>
-    <div class="contact_form_box">
-        <form method="POST" action="mail.php">
-          <input type="text" placeholder="Navn" name="name">
-          <input type="email" placeholder="E-mail" name="email">
-          <input type="telNo" placeholder="Telefonnr." name="phone">
-          <input type="subject" placeholder="Emne" name="emne">
-          <textarea name="message" placeholder="Skriv venligst din besked her." rows="4" cols="50"></textarea>
-          <input class="orangebutton" id="send_message" type="submit" value="Send besked">
-    
-        </form>
-      </div>
-    
-    
+                    <a href="tel:77 34 88 85"><button class="bluebuttonydelse">Kontact Nicolai</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="desktopservicebox" id="alarmogsikkerhed">
+            <div class="it-tvtekst">
+                <p class="onlymobile" id="closex" onclick="closeinfo()">X</p>
+                <div class="kontaktmobil1">
+                    <img class="mobilkontaktpic" src="images/NookBox - Modern House.png">
+
+
+                </div>
+                <div>
+                    <div class="skriftandliste">
+                        <div class="overskrifandtext">
+                            <h2>Alarm og overvågning</h2>
+                            <p>Ønsker du at beskytte dit hjem?
+                                Hvis du vil øge sikkerhed og skabe en mere tryg hverdag, kan Søren og Nicolai hjælpe dig
+                                godt på vej. Vi vejleder og installerer alarmsystemer og overvågning.
+
+                            </p>
+                        </div>
+
+
+                        <div class="it-tvlistemobile">
+                            <ul>
+                                <li>
+                                    <h4>Ved køb af alarm får du:</h4>
+                                </li>
+                                <li>- Opsætning af videoovervågning</li>
+                                <li>- Opsætning af alarmsystemer</li>
+                                <li>- Opsætning af dørsensor</li>
+                                <li>- Opsætning af dørkontakt</li>
+                            </ul>
+                        </div>
+                        <div class="it-tvlistedesktop">
+                            <ul>
+                                <li>Opsætning af videoovervågning</li>
+                                <li>Opsætning af alarmsystemer</li>
+                                <li>Opsætning af dørsensor</li>
+                                <li>Opsætning af dørkontakt</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buttonandimg">
+                    <img class="desktoppng" src="images/nicolai.jpg">
+                    <img class="desktoppng" src="images/soren.jpg">
+                    <a href="tel:77 34 88 85"><button class="orangebuttonydelse">Kontakt os</button></a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="desktopservicebox" id="eloginstallation">
+            <div class="it-tvtekst">
+                <p class="onlymobile" id="closex" onclick="closeinfo()">X</p>
+                <div class="kontaktmobil1">
+                    <img class="mobilkontaktpic" src="images/Eltavle.png">
+
+
+                </div>
+                <div>
+                    <div class="skriftandliste">
+                        <div class="overskrifandtextel">
+                            <h2>El og installation</h2>
+                            <p>Hos Harder & Køhler tilbyder vi el-installation. Hvis du eksempelvis skal have
+                                installeret nye hvidevarer, kan du trygt ringe til os.</p>
+                        </div>
+
+
+                        <div class="it-tvlistemobile">
+                            <ul>
+                                <li>
+                                    <h4>Vi kan hjælpe med:</h4>
+                                </li>
+                                <li>- A/V løsninger </li>
+                                <li>- Montering af hvidevarer</li>
+                                <li>- EL-materialer</li>
+                                <li>- EL-arbejde</li>
+
+                            </ul>
+                        </div>
+                        <div class="it-tvlistedesktopel">
+                            <ul>
+                                <li>A/V løsninger </li>
+                                <li>Montering af hvidevarer</li>
+                                <li>EL-materialer</li>
+                                <li>EL-arbejde</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buttonandimg">
+
+                    <img class="desktoppng" src="images/soren.jpg">
+                    <a href="tel:77 34 88 85"><button class="bluebuttonydelse">Kontakt Søren</button></a>
+                </div>
+            </div>
+        </div>
+        </div>
     </section>
-</div>
+    <div id="contactydelse">
+        <section class="contact">
 
-<footer>
-    <div class="venstrefooter">
-      <img src="images/logo_notext.png">
-        <div class="mail">
-              <ul>
-                <li><img src="/images/mail_white.svg"><a href="mailto:kontakt@vardeservice.dk">kontakt@vardeservice.dk</a> </li>
-              </ul>
-            </div>
-        <div class="telefon">
-          <ul>
-      <li><img src="/images/phone_white.svg"><a href="tel:77 34 88 85">77 34 88 85</a></li>
-    </ul>
-          </div>
-    
-          <div class="adresse">
-            <ul>
-              <li>Engdraget 20
-            6800 Varde, Danmark</li>
-            <li>CVR: 40750533</li></ul>
+            <h2>Kontakt os i dag!</h2>
+            <div class="contact_form_box">
+                <form method="POST" action="mail.php">
+                    <input type="text" placeholder="Navn" name="name">
+                    <input type="email" placeholder="E-mail" name="email">
+                    <input type="telNo" placeholder="Telefonnr." name="phone">
+                    <input type="subject" placeholder="Emne" name="emne">
+                    <textarea name="message" placeholder="Skriv venligst din besked her." rows="4" cols="50"></textarea>
+                    <input class="orangebutton" id="send_message" type="submit" value="Send besked">
+
+                </form>
             </div>
 
-    <div class="pris">
-      <ul>
-        <li>Privat: kr. 550,-/ timen inkl. moms</li>
-    <li>Erhverv: kr. 450,./ timen inkl. moms</li>
-    </ul>
+
+        </section>
     </div>
-    <div class="some">
-      <a target="_blank" href="https://www.facebook.com/vardeservice/">
-              <img src="images/facebook.png" alt="Facebook logo"></a>
-              <a target="_blank" href="https://www.facebook.com/vardeservice/"><img src="images/google_my_bus.png" alt="Google My Business logo"></a>
-          </div>
-    </div>
-    
-    <div class="onlydesktop">
-    
-      <h2>Kontakt os i dag!</h2>
-      <p>Send os en besked. Vi stræber på altid at svare inden 12 timer.</p>
-      <div class="contact_form_box">
-          <form method="POST" action="mail.php">
-            <input type="text" placeholder="Navn" name="name">
-            <input type="email" placeholder="E-mail" name="email">
-            <input type="telNo" placeholder="Telefonnr." name="phone">
-            <input type="subject" placeholder="Emne" name="emne">
-            <textarea name="message" placeholder="Skriv venligst din besked her." rows="4" cols="50"></textarea>
-            <input class="orangebutton" id="send_message" type="submit" value="Send besked">
-    
-          </form>
+
+    <footer>
+        <div class="venstrefooter">
+            <img src="images/logo_notext.png">
+            <div class="mail">
+                <ul>
+                    <li><img src="/images/mail_white.svg"><a
+                            href="mailto:kontakt@vardeservice.dk">kontakt@vardeservice.dk</a> </li>
+                </ul>
+            </div>
+            <div class="telefon">
+                <ul>
+                    <li><img src="/images/phone_white.svg"><a href="tel:77 34 88 85">77 34 88 85</a></li>
+                </ul>
+            </div>
+
+            <div class="adresse">
+                <ul>
+                    <li>Engdraget 20
+                        6800 Varde, Danmark</li>
+                    <li>CVR: 40750533</li>
+                </ul>
+            </div>
+
+            <div class="pris">
+                <ul>
+                    <li>Privat: kr. 550,-/ timen inkl. moms</li>
+                    <li>Erhverv: kr. 450,./ timen inkl. moms</li>
+                </ul>
+            </div>
+            <div class="some">
+                <a target="_blank" href="https://www.facebook.com/vardeservice/">
+                    <img src="images/facebook.png" alt="Facebook logo"></a>
+                <a target="_blank" href="https://www.facebook.com/vardeservice/"><img src="images/google_my_bus.png"
+                        alt="Google My Business logo"></a>
+            </div>
         </div>
-    
-    
-    </div>
-          </footer>
+
+        <div class="onlydesktop">
+
+            <h2>Kontakt os i dag!</h2>
+            <p>Send os en besked. Vi stræber på altid at svare inden 12 timer.</p>
+            <div class="contact_form_box">
+                <form method="POST" action="mail.php">
+                    <input type="text" placeholder="Navn" name="name">
+                    <input type="email" placeholder="E-mail" name="email">
+                    <input type="telNo" placeholder="Telefonnr." name="phone">
+                    <input type="subject" placeholder="Emne" name="emne">
+                    <textarea name="message" placeholder="Skriv venligst din besked her." rows="4" cols="50"></textarea>
+                    <input class="orangebutton" id="send_message" type="submit" value="Send besked">
+
+                </form>
+            </div>
+
+
+        </div>
+    </footer>
 
 
     <script src="js/main.js"></script>
 </body>
+
 </html>

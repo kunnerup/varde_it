@@ -1,104 +1,114 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harder & Køhler - Om os</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harder & Køhler - Om os</title>
 
-    <link rel="stylesheet" href="style/main.css">
-    <link rel="icon" href="favicon.ico" type="image/ico" sizes="16x16">
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="icon" href="favicon.ico" type="image/ico" sizes="16x16">
 </head>
+
 <body>
-    <nav>
-        <div id="burger" onclick="openMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+  <nav>
+    <div id="burger" onclick="openMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
-        <a href="/"><img src="images/Logo_white.png" alt="Harder&Køhler logo"></a>
-        <ul id="menu"> 
-            <li><a href="/">Hjem</a></li>
-            <li id="ydelser" class="onlydesktop"><a href="services.html"><span class="active">Ydelser</span></a>
-                <ul class="dropdown">
-                    <a href="Private.html"><li>Privat</li></a>
-                    <a href="company.html"><li>Erhverv</li></a>
-                </ul>
-            </li>
-            <li class="onlymobile"> <a href="Private.html">Privat</a></li>
-            <li class="onlymobile"><a href="company.html">Erhverv</a></li>
-
-            <li><a href="about.html">Om os</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li class="cta_contact"><a href="contact.html">Kontakt</a></li>
+    <a href="/"><img src="images/Logo_white.png" alt="Harder&Køhler logo"></a>
+    <ul id="menu">
+      <li><a href="/">Hjem</a></li>
+      <li id="ydelser" class="onlydesktop"><a href="services.html"><span class="active">Ydelser</span></a>
+        <ul class="dropdown">
+          <a href="Private.html">
+            <li>Privat</li>
+          </a>
+          <a href="company.html">
+            <li>Erhverv</li>
+          </a>
         </ul>
+      </li>
+      <li class="onlymobile"> <a href="Private.html">Privat</a></li>
+      <li class="onlymobile"><a href="company.html">Erhverv</a></li>
 
-    </nav>
+      <li><a href="about.html">Om os</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li class="cta_contact"><a href="contact.html">Kontakt</a></li>
+    </ul>
+
+  </nav>
 
 
-    <h2 id="bygsideh2">Byg din computer</h2>
-    <section class="buildpage">
-<img src="images/byg.png">
-<img src="images/byg2.png">
+  <h2 id="bygsideh2">Byg din computer</h2>
+  <section class="buildpage">
+    <img src="images/byg.png">
+    <img src="images/byg2.png">
 
 
-    </section>
+  </section>
 
 
-    <footer>
-        <div class="venstrefooter">
-          <img src="images/logo_notext.png">
-            <div class="mail">
-                  <ul>
-                    <li><img src="/images/mail_white.svg"><a href="mailto:kontakt@vardeservice.dk">kontakt@vardeservice.dk</a> </li>
-                  </ul>
-                </div>
-            <div class="telefon">
-              <ul>
+  <footer>
+    <div class="venstrefooter">
+      <img src="images/logo_notext.png">
+      <div class="mail">
+        <ul>
+          <li><img src="/images/mail_white.svg"><a href="mailto:kontakt@vardeservice.dk">kontakt@vardeservice.dk</a>
+          </li>
+        </ul>
+      </div>
+      <div class="telefon">
+        <ul>
           <li><img src="/images/phone_white.svg"><a href="tel:77 34 88 85">77 34 88 85</a></li>
         </ul>
-              </div>
-        
-              <div class="adresse">
-                <ul>
-                  <li>Engdraget 20
-                6800 Varde, Danmark</li>
-                <li>CVR: 40750533</li></ul>
-                </div>
+      </div>
 
-        <div class="pris">
-          <ul>
-            <li>Privat: kr. 550,-/ timen inkl. moms</li>
-        <li>Erhverv: kr. 450,./ timen inkl. moms</li>
+      <div class="adresse">
+        <ul>
+          <li>Engdraget 20
+            6800 Varde, Danmark</li>
+          <li>CVR: 40750533</li>
         </ul>
-        </div>
-        <div class="some">
-          <a target="_blank" href="https://www.facebook.com/vardeservice/">
-                  <img src="images/facebook.png" alt="Facebook logo"></a>
-                  <a target="_blank" href="https://www.facebook.com/vardeservice/"><img src="images/google_my_bus.png" alt="Google My Business logo"></a>
-              </div>
-        </div>
-        
-        <div class="onlydesktop">
-        
-          <h2>Kontakt os i dag!</h2>
-          <p>Send os en besked. Vi stræber på altid at svare inden 12 timer.</p>
-          <div class="contact_form_box">
-              <form method="POST" action="mail.php">
-                <input type="text" placeholder="Navn" name="name">
-                <input type="email" placeholder="E-mail" name="email">
-                <input type="telNo" placeholder="Telefonnr." name="phone">
-                <input type="subject" placeholder="Emne" name="emne">
-                <textarea name="message" placeholder="Skriv venligst din besked her." rows="4" cols="50"></textarea>
-                <input class="orangebutton" id="send_message" type="submit" value="Send besked">
-        
-              </form>
-            </div>
-        
-        
-        </div>
-              </footer>
+      </div>
 
-<script src="js/main.js"></script>
+      <div class="pris">
+        <ul>
+          <li>Privat: kr. 550,-/ timen inkl. moms</li>
+          <li>Erhverv: kr. 450,./ timen inkl. moms</li>
+        </ul>
+      </div>
+      <div class="some">
+        <a target="_blank" href="https://www.facebook.com/vardeservice/">
+          <img src="images/facebook.png" alt="Facebook logo"></a>
+        <a target="_blank" href="https://www.facebook.com/vardeservice/"><img src="images/google_my_bus.png"
+            alt="Google My Business logo"></a>
+      </div>
+    </div>
+
+    <div class="onlydesktop">
+
+      <h2>Kontakt os i dag!</h2>
+      <p>Send os en besked. Vi stræber på altid at svare inden 12 timer.</p>
+      <div class="contact_form_box">
+        <form method="POST" action="mail.php">
+          <input type="text" placeholder="Navn" name="name">
+          <input type="email" placeholder="E-mail" name="email">
+          <input type="telNo" placeholder="Telefonnr." name="phone">
+          <input type="subject" placeholder="Emne" name="emne">
+          <textarea name="message" placeholder="Skriv venligst din besked her." rows="4" cols="50"></textarea>
+          <input class="orangebutton" id="send_message" type="submit" value="Send besked">
+
+        </form>
+      </div>
+
+
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
+
 </html>
