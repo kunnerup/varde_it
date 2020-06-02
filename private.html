@@ -37,16 +37,31 @@
     <h2>Ydelser / Privat</h2>
 <div class="overkasse">
 <div class="servicebox1">
-    <div class="kasse1-service" onclick="modalIt()"><a><p>IT og TV</p>
+
+    <div class="kasse1-service" id="hideondesktop" onclick="modalIt()"><a><p>IT og TV</p>
     <img src="images/computer.png"></a></div>
-    <div class="kasse1-service" onclick="modalApple()"><a><p>Apple produkter</p>
+    <div class="kasse1-service" id="hideonmobile" onclick="openIt()"><a><p>IT og TV</p>
+        <img src="images/computer.png"></a></div>
+
+    <div class="kasse1-service" id="hideondesktop" onclick="modalApple()"><a><p>Apple produkter</p>
         <img src="images/apple.png"></a></div>
-    <div class="kasse1-service" onclick="modalAlarm()"><a><p>Alarm og sikkerhed</p>
+        <div class="kasse1-service" id="hideonmobile" onclick="openApple()"><a><p>Apple produkter</p>
+            <img src="images/apple.png"></a></div>
+
+    <div class="kasse1-service" id="hideondesktop" onclick="modalAlarm()"><a><p>Alarm og sikkerhed</p>
         <img src="images/overvaagning.png"></a></div>
-    <div class="kasse1-service" onclick="modalEl()"><a><p>El og installation</p>
+        <div class="kasse1-service" id="hideonmobile" onclick="openAlarm()"><a><p>Alarm og sikkerhed</p>
+            <img src="images/overvaagning.png"></a></div>
+
+    <div class="kasse1-service" id="hideondesktop" onclick="modalEl()"><a><p>El og installation</p>
         <img src="images/el.png"></a></div>
-        <div class="kasse1-service"><a><p>Byg din computer</p>
+        <div class="kasse1-service" id="hideonmobile" onclick="openEl()"><a><p>El og installation</p>
+            <img src="images/el.png"></a></div>
+
+        <div class="kasse1-service" id="hideondesktop"><a href="/build.html"><p>Byg din computer</p>
             <img src="images/computer.png"></a></div>
+            <div class="kasse1-service" id="hideonmobile" onclick="openBuild()"><a><p>Byg din computer</p>
+                <img src="images/computer.png"></a></div>
 </div>
 <!---<div class="kasse3-service"><button>El og installation
     <img src="images/el.png"></button></div> -->
@@ -62,27 +77,29 @@
         <li>Antennestik</li>   
     <li>Opsætning af Computer</li> 
     <li>Opsætning af printer</li>
-    <li>Optimering af computer</li>
+    <li>Optimering af netværk</li>
     </ul>
     <a href="#ittv"><button class="bluebuttonydelselistbox">Se mere</button></a>
 </div>
 </section>
 </div>
+
 <div class="Appleprodukt">
     <section class="picandboxs">
     <div class="pic"><img src="images/Mac.png"></div>
     <div class="listbox">
         <h4>Apple produkter</h4>
         <ul>
-            <li>Iphone</li>   
+            <li>iPhone</li>   
             <li>Macbook</li> 
-            <li>Imac</li>
-            <li>Ipad</li>
+            <li>iMac</li>
+            <li>iPad</li>
         </ul>
         <a href="#apple"><button class="bluebuttonydelselistbox">Se mere</button></a>
     </div>
     </section>
     </div>
+
     <div class="Alarm">
         <section class="picandboxs">
         <div class="pic"><img src="images/Mac.png"></div>
@@ -93,12 +110,13 @@
                 <li>Opsætning af videoovervågning</li>   
             <li>Opsætning af alarmsystemer</li> 
             <li>Opsætning af dørsensor</li>
-            <li>Opsætning af dørkontakt</li>
+            <li>Opsætning af overvågning</li>
             </ul>
             <a href="#alarmogsikkerhed"><button class="bluebuttonydelselistbox">Se mere</button></a>
         </div>
         </section>
         </div>
+
         <div class="El">
             <section class="picandboxs">
             <div class="pic"><img src="images/Mac.png"></div>
@@ -112,6 +130,22 @@
             </div>
             </section>
             </div>
+
+            <div class="build">
+                <section class="picandboxs">
+                <div class="pic"><img src="images/Mac.png"></div>
+                <div class="listbox">
+                    <h4>Byg din egen computer</h4>
+                    <ul>
+                        <li>Vælg model</li>   
+                <li>Vælg indmad</li> 
+                <li>Srkæddersyet til dit behov</li> 
+                    </ul>
+                    <a href="build.html"><button class="bluebuttonydelselistbox">Se mere</button></a>
+                </div>
+                </section>
+                </div>
+
 <section class="customslider">
     <h3>Det siger vores kunder:</h3>
 <div class="slideshow-container">
@@ -351,6 +385,62 @@
     
     </section>
 </div>
+
+<footer>
+    <div class="venstrefooter">
+      <img src="images/logo_notext.png">
+        <div class="mail">
+              <ul>
+                <li><i class="fa fa-envelope-o" style="font-size:38px;color:orange"></i><a href="mailto:kontakt@vardeservice.dk">kontakt@vardeservice.dk</a> </li>
+              </ul>
+            </div>
+        <div class="telefon">
+          <ul>
+      <li><i class="fa fa-phone" style="font-size:38px;color:orange"></i>
+        <br><a href="tel:77 34 88 85">77 34 88 85</a></li>
+    </ul>
+          </div>
+    
+          <div class="adresse">
+            <ul>
+              <li>Engdraget 20
+            6800 Varde, Danmark</li>
+            <li>CVR: 40750533</li></ul>
+            </div>
+
+    <div class="pris">
+      <ul>
+        <li>Privat: kr. 550,-/ timen inkl. moms</li>
+    <li>Erhverv: kr. 450,./ timen inkl. moms</li>
+    </ul>
+    </div>
+    <div class="some">
+      <a target="_blank" href="https://www.facebook.com/vardeservice/">
+              <img src="images/facebook.png" alt="Facebook logo"></a>
+              <a target="_blank" href="https://www.facebook.com/vardeservice/"><img src="images/google_my_bus.png" alt="Google My Business logo"></a>
+          </div>
+    </div>
+    
+    <div class="onlydesktop">
+    
+      <h2>Kontakt os i dag!</h2>
+      <p>Send os en besked. Vi stræber på altid at svare inden 12 timer.</p>
+      <div class="contact_form_box">
+          <form method="POST" action="mail.php">
+            <input type="text" placeholder="Navn" name="name">
+            <input type="email" placeholder="E-mail" name="email">
+            <input type="telNo" placeholder="Telefonnr." name="phone">
+            <input type="subject" placeholder="Emne" name="emne">
+            <textarea name="message" placeholder="Skriv venligst din besked her." rows="4" cols="50"></textarea>
+            <input class="orangebutton" id="send_message" type="submit" value="Send besked">
+    
+          </form>
+        </div>
+    
+    
+    </div>
+          </footer>
+
 
     <script src="js/main.js"></script>
 </body>

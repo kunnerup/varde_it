@@ -287,8 +287,10 @@ footer{
 width: 100%;
 padding-bottom: 50px;
 display: flex;
-
 }
+
+#hideonmobile {display: none}
+
 footer a{
 text-decoration: none;
 color: white;
@@ -2048,15 +2050,14 @@ width: 65%;
          margin-top: 10%;
      }
 
-     /***displaynoneveiw*/
-     .Appleprodukt{
+     /***displaynoneview*/
+     .Appleprodukt, .Alarm, .El, .build{
          display: none;
      }
-     .Alarm{display: none;}
-     
-     .El{display: none;}
 
+     #hideondesktop {display: none}
 
+     #hideonmobile {display: flex;}
      
       .it-tvtekst{
           text-align: center;
@@ -2211,7 +2212,7 @@ width: 65%;
         flex-direction: column-reverse;
         align-items: center;
         background-color: white;
-        
+        text-decoration: none;        
     }
     .buttonandimg{
         display: flex;
