@@ -209,3 +209,44 @@ function modalAlarm() {
     document.getElementById("eloginstallation").style.display = "none";
     document.getElementById("alarmogsikkerhed").style.display = "none";
   }
+
+
+  //Mini menu, desktop, ydelser
+  let it = document.querySelector(".tvveiw");
+  let apple = document.querySelector(".Appleprodukt");
+ let alarm = document.querySelector(".Alarm");
+  let elek = document.querySelector(".El");
+  let build = document.querySelector(".build");
+
+  function closeInformation() {
+    it.style.display="none";
+    apple.style.display="none";
+    alarm.style.display="none";
+    elek.style.display="none";
+    build.style.display="none";
+  }
+
+  function openIt() {
+    closeInformation();
+it.style.display ="flex";
+  }
+
+  function openApple() {
+    closeInformation();
+    apple.style.display = "flex";
+  }
+
+  function openAlarm() {
+    closeInformation();
+    alarm.style.display ="flex";
+  }
+
+  function openEl() {
+    closeInformation();
+    elek.style.display ="flex";
+  }
+
+  function openBuild() {
+    closeInformation();
+    build.style.display ="flex";
+  }
