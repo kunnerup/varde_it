@@ -298,8 +298,8 @@ font-size: 24px;
 }
 
 footer img {
-width: 20px;
-margin-right: 25px;
+width: 70px;
+margin: auto;
 }
 
 footer div{
@@ -349,6 +349,11 @@ padding-bottom: 30px;
 }
 .mail li a{
 font-size: 20px;
+}
+
+.mail img, .telefon img {
+    margin-right: 25px;
+    width: 20px;
 }
 
 
@@ -599,10 +604,13 @@ flex-wrap: wrap;
 #aboutusinner ul {
     list-style: circle;
     list-style-position: inside;
-    padding-bottom: 65px;
+    padding-bottom: 15px;
 }
 
-#aboutusinner h3, #aboutusinner h4, #aboutusinner p{
+#aboutusinner h3, #aboutusinner h4{
+    color: var(--lightorange);
+}
+#aboutusinner p{
     color: var(--whitetext);
 }
 
@@ -622,7 +630,7 @@ flex-direction: row-reverse;
     flex-direction: column;
 }
 
-#aboutusinner div div img {
+.bigportrait {
     width: 29%;
     height: 29%;
     border-radius: 50%;
@@ -630,6 +638,15 @@ flex-direction: row-reverse;
     border: 3px solid var(--lightorange);
     margin-right: -30px;
     margin-top: 65px;
+}
+
+#aboutusinner .private_some{
+display: none;
+}
+
+#aboutusinner .private_some img{
+width: 30px;
+margin: none;
 }
 
 #rightline {
@@ -664,6 +681,13 @@ font-style: italic;
     font-family: basic;
     font-weight: lighter;
     padding-bottom: 20px;
+}
+
+.column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
 }
 
 #contactfrontpage {
@@ -1918,6 +1942,13 @@ width: 65%;
         padding-bottom: 50px;
     }
 
+    #aboutusinner .private_some{
+display: flex;
+flex-direction: row;
+    }
+    #aboutusinner .private_some img{
+    border: none;
+    }
     #endingline {
         display: none;
     }
@@ -2085,6 +2116,10 @@ left: 10px;}
      #appleline, #itline, #alarmline, #buildline, #elline {
          box-sizing: border-box;
          padding-bottom: 3px;
+     }
+
+     #itline {
+         border-bottom: 3px solid var(--lightorange);
      }
 
      #hideondesktop {display: none}
