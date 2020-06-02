@@ -1302,6 +1302,7 @@ footer ul {
 
 }
 
+
 .it-tvlistedesktopel {
     display: none;
     width: 30%;
@@ -1622,6 +1623,12 @@ footer ul {
 .Erhverv h3 {
     margin-top: 5%;
     color: var(--darkblue);
+}
+.overskrifandtextel h3{
+    color: var(--lightorange);
+}
+.overskrifandtextel h4{
+    color: var(--lightorange);
 }
 
 .Erhverv {
@@ -2495,6 +2502,7 @@ footer ul {
         width: 48%;
         margin-right: 25%;
     }
+    
 
     .skriftandliste {
         display: flex;
