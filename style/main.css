@@ -607,7 +607,10 @@ flex-wrap: wrap;
     padding-bottom: 15px;
 }
 
-#aboutusinner h3, #aboutusinner h4, #aboutusinner p{
+#aboutusinner h3, #aboutusinner h4{
+    color: var(--lightorange);
+}
+#aboutusinner p{
     color: var(--whitetext);
 }
 
