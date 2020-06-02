@@ -1286,7 +1286,9 @@ left: -120px;
         left: 0;
         background-color: var(--white);
         z-index: 500;
-     }
+     
+    
+    }
 
      #apple, #alarmogsikkerhed, #eloginstallation, #ittv{
          display: none;
@@ -1862,9 +1864,7 @@ transform: scale(1.05);
         margin-top:5%;
         color:var(--lightorange);
         font-size: 2em;
-
-        
-     } 
+    } 
      /** ydelse**/
      #option{
          display: flex;
@@ -2035,7 +2035,7 @@ transform: scale(1.05);
        
       
        
-   }
+   
    .it-tvlistedesktopel{
     display: block;
     width: 30%;
@@ -2065,6 +2065,7 @@ transform: scale(1.05);
 
     
    .it-tvlistemobile{display: none;}
+
    .it-tvlistedesktop {
        display: block;
        color: var(--darkblue);
