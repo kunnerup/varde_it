@@ -217,6 +217,11 @@ function modalAlarm() {
  let alarm = document.querySelector(".Alarm");
   let elek = document.querySelector(".El");
   let build = document.querySelector(".build");
+  let itline = document.querySelector("#itline");
+  let appleline = document.querySelector("#appleline");
+  let elline = document.querySelector("#elline");
+  let buildline = document.querySelector("#buildline");
+  let alarmline = document.querySelector("#alarmline");
 
   function closeInformation() {
     it.style.display="none";
@@ -224,29 +229,39 @@ function modalAlarm() {
     alarm.style.display="none";
     elek.style.display="none";
     build.style.display="none";
+itline.style.borderBottom ="none";
+appleline.style.borderBottom ="none";
+elline.style.borderBottom ="none";
+buildline.style.borderBottom ="none";
+alarmline.style.borderBottom ="none";
   }
 
   function openIt() {
     closeInformation();
 it.style.display ="flex";
+itline.style.borderBottom = "3px solid var(--lightorange)";
   }
 
   function openApple() {
     closeInformation();
     apple.style.display = "flex";
+    appleline.style.borderBottom = "3px solid var(--lightorange)";
   }
 
   function openAlarm() {
     closeInformation();
     alarm.style.display ="flex";
+    alarmline.style.borderBottom = "3px solid var(--lightorange)";
   }
 
   function openEl() {
     closeInformation();
     elek.style.display ="flex";
+    elline.style.borderBottom = "3px solid var(--lightorange)";
   }
 
   function openBuild() {
     closeInformation();
     build.style.display ="flex";
+    buildline.style.borderBottom = "3px solid var(--lightorange)";
   }
