@@ -1418,7 +1418,7 @@ left: -120px;
         width: 100%;
         margin: auto;
         margin-bottom: 10%;
-        margin-top: 20%;
+        margin-top: 5%;
         max-width: 250px;
         cursor: pointer;
   
@@ -1434,9 +1434,8 @@ left: -120px;
         font-family: headline;
         width: 100%;
         margin: auto;
-        
         margin-bottom: 10%;
-        margin-top: 20%;
+        margin-top: 5%;
         max-width: 250px;
         cursor: pointer;
   
@@ -1475,20 +1474,19 @@ left: -120px;
     }
     
     .Erhverv h3{
-        margin-top: 10%;
-        padding-top: 10%;
-        color: var(--lightorange);
+        margin-top: 5%;
+        color: var(--darkblue);
         
     }
     
     .Erhverv{
         width: 90%;
-        background-color: var(--darkblue);
+        background-color: var(--lightorange);
         margin: auto;
         text-align: center;
         margin-top: 10%;
         margin-bottom: 10%;
-        color: var(--lightorange);
+        color: var(--darkblue);
         border-radius: 5px;
 
         
@@ -1499,9 +1497,8 @@ left: -120px;
         width: auto;
     }
     .privat h3{
-        margin-top: 10%;
-        padding-top: 10%;
-        color:var(--darkblue)
+        margin-top: 5%;
+        color:var(--lightorange)
     }
     .privat{
         width: 90%;
@@ -1511,8 +1508,8 @@ left: -120px;
         margin-top: 10%;
       
         border-radius: 5px;
-        background-color: var(--lightorange);
-        color: var(--darkblue);
+        background-color: var(--darkblue);
+        color: var(--lightorange);
         
         
         
@@ -1995,14 +1992,14 @@ width: 65%;
      /** ydelse**/
      #option{
          display: flex;
-         flex-direction: row;
+         flex-direction: column;
          
      }
      
       
      .Erhverv{
          width: 80%;
-         height: auto;
+         height: 300px;
          margin-top: 5%;
          
          
@@ -2014,7 +2011,7 @@ width: 65%;
      .privat{
          
          width: 80%;
-         height: auto;
+         height: 300px;
          margin-top: 5%;
         
         
@@ -2072,6 +2069,9 @@ width: 65%;
      .listbox li{
          line-height: 20px;
      }
+     .listbox p{position: relative;
+    bottom: 9px;
+left: 10px;}
      #semereknap{
          margin-top: 10%;
      }
@@ -2182,6 +2182,7 @@ width: 65%;
    .it-tvlistedesktopel{
     display: block;
     width: 30%;
+    margin-top: 5%;
     margin-right: 65px;
 }
 .it-tvlistedesktopapple{
