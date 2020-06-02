@@ -1623,6 +1623,7 @@ left: -120px;
 #post_container article {
     box-shadow: var(--shadow);
     margin-bottom: 40px;
+    height: auto;
 }
 
 #post_container img {
@@ -1642,7 +1643,7 @@ left: -120px;
 }
 
 #post_container p {
-    padding-top: 20px;
+    padding-top: 7px;
     padding-bottom: 20px;
 }
 

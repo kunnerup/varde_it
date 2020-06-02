@@ -44,10 +44,11 @@ function appendPosts(posts) {
 
   for (let post of posts) {
     postContainer += `
-      <article onclick="showDetailView(post)">
+      <article>
       <img src="${post.acf.img}" alt="Blog picture">
         <h2>${post.title.rendered}</h2>
         <p>${post.acf.first_part_text}</p>  
+        <p>${post.acf.second_part_text}</p>  
       </article>
     `;
   }
@@ -69,16 +70,6 @@ function search(value) {
   appendPosts(filteredPosts);
 }
 
-
-//Læs hele blogindlægget
-function showDetailView(post){
-  _selectedPost = posts[post];
-  document.querySelector("#detail-view").innerHTML = `
-      <h2>${_selectedPost.acf.first_part_text}</h2>
-
-      </article>
-  `;
-}
 
 
 // FETCHER DE FORSKELLIGE KATEGORIER FRA BLOGGEN
