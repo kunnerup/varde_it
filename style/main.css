@@ -1152,6 +1152,14 @@ left: -120px;
     
     
     }
+    .it-tvlistedesktopel{
+        display: none;
+        width: 30%;
+    }
+    .it-tvlistedesktopapple{
+        display: none;
+        width: 30%;
+    }
     .picandboxs{display: none;}
     
     .kasse1-service a{
@@ -1388,6 +1396,7 @@ left: -120px;
     #closex{
         position: absolute;
         right: 10px;
+        
 
       
         top: 11px;
@@ -2008,6 +2017,14 @@ transform: scale(1.05);
       
        
    }
+   .it-tvlistedesktopel{
+    display: block;
+    width: 30%;
+}
+.it-tvlistedesktopapple{
+    display: block;
+    width: 30%;
+}
    
    #apple h2, #eloginstallation h2{
        color: var(--darkblue)
@@ -2038,9 +2055,7 @@ transform: scale(1.05);
    .it-tvlistedesktopapple{
        margin-left: 18%;
    }
-   .it-tvlistedesktopel{
-       width: 30%;
-   }
+   
    
     
    .servicebox1{
