@@ -875,22 +875,210 @@ width: 100%;
 #kompetencecontainer:before {
     content: "";
     position: absolute;
-    background: url(../images/stik.png);
+    background: url(../images/stik_down.png);
     background-size: contain;
     background-repeat: no-repeat;
-    transform: rotate(50%);
     height: 30px;
     width: 14px;
-    bottom: -50px;
+    bottom: -79px;
     left: 50%;
     transform: translate(-50%);
 }
+
+#lineone{
+    position: absolute;
+height: 70px;
+width: 200px;
+border-top: 1.5px solid var(--lightorange);
+border-right: 1.5px solid var(--lightorange);
+top:100px;
+left: -120px;
+}
+
+#lineone::after{
+    content: "";
+    position: absolute;
+    background: url(../images/stik_down.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 14px;
+    bottom: -28px;
+  right: -8px;
+}
+
+#lineone::before{
+    content: "";
+    position: absolute;
+    background: url(../images/soren.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+    border: 1.5px solid var(--lightorange);
+    bottom: 30px;
+ left: -80px;
+  border-radius: 50%;
+}
+
+#linetwo{
+    position: absolute;
+    height: 70px;
+    width: 200px;
+    border-top: 1.5px solid var(--lightorange);
+    border-left: 1.5px solid var(--lightorange);
+    top:100px;
+    right: -120px;
+}
+
+#linetwo::after{
+    content: "";
+    position: absolute;
+    background: url(../images/stik_down.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 14px;
+    bottom: -28px;
+  left: -7px;
+}
+
+#linetwo::before{
+    content: "";
+    position: absolute;
+    background: url(../images/nicolai.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+    border: 1.5px solid var(--lightorange);
+    bottom: 30px;
+  right: -80px;
+  border-radius: 50%;
+}
+
+#linethree{
+    position: absolute;
+    height: 70px;
+    width: 200px;
+    border-bottom: 1.5px solid var(--lightorange);
+    border-left: 1.5px solid var(--lightorange);
+    bottom:100px;
+    right: -120px; 
+}
+
+#linethree::after{
+    content: "";
+    position: absolute;
+    background: url(../images/stik.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 14px;
+    bottom: 68px;
+  left: -7px;
+}
+
+#linethree::before{
+    content: "";
+    position: absolute;
+    background: url(../images/soren.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+    border: 1.5px solid var(--lightorange);
+    bottom: -41px;
+  right: -80px;
+  border-radius: 50%;
+}
+
+#linefour{
+    position: absolute;
+    height: 70px;
+    width: 200px;
+    border-bottom: 1.5px solid var(--lightorange);
+    border-right: 1.5px solid var(--lightorange);
+    bottom:100px;
+    left: -120px;    
+}
+
+#linefour::after{
+    content: "";
+    position: absolute;
+    background: url(../images/stik.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 14px;
+    bottom: 68px;
+  right: -8px;
+}
+
+#linefour::before{
+    content: "";
+    position: absolute;
+    background: url(../images/nicolai.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+    border: 1.5px solid var(--lightorange);
+    bottom: -41px;
+  left: -80px;
+  border-radius: 50%;
+}
+
+.specs{
+    position: absolute;
+    color: var(--darkblue);
+    width: 155px;
+}
+
+.specs p {
+    font-size: 17px;
+}
+
+#spec1{
+    left:-365px;
+    top: 45px;
+    text-align: right;
+}
+
+#spec2{
+    right:-365px;
+    top: 45px;
+}
+
+#spec3{
+    right:-365px;
+    top: 345px;
+}
+
+#spec4{
+    left:-365px;
+    top: 345px;
+    text-align: right;
+}
+
+@media (min-width: 1275px) {
+    .specs{
+    width: 240px;
+}
+#spec1, #spec4{
+    left:-460px;
+}
+#spec3, #spec2{
+    right:-460px;
+}
+}
+
 
   /*KONTAKT*/
 .contact {
     width: 90%;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 130px;
     margin-bottom: 100px;
 }
 
@@ -1187,7 +1375,7 @@ width: 100%;
         
         border-radius: 5px;
         
-    }}
+    }
     .kontaktmobile {
         display: flex;
         flex-direction: column;
