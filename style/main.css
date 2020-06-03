@@ -13,6 +13,7 @@
     padding: 0;
     margin: 0;
     font-family: basic;
+    scroll-behavior: smooth;
 }
 
 h2 {
@@ -238,7 +239,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     100% {
-        transform: rotate(360deg);
+        transform: rotate(-360deg);
     }
 }
 
@@ -475,9 +476,9 @@ footer ul {
 }
 
 .spinner {
-    border: 10px solid var(--lightorange);
+    border: 6px solid var(--lightorange);
     border-radius: 50%;
-    border-top: 10px solid var(--lightblue);
+    border-top: 6px solid var(--lightblue);
     width: 50px;
     height: 50px;
     animation: spin 2s linear infinite;
@@ -489,6 +490,19 @@ footer ul {
     right: 0;
     bottom: 0;
     left: 0;
+}
+
+.spinner:after {
+    content: "";
+    position: absolute;
+    background: url(../images/stik.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(320deg);
+    height: 30px;
+    width: 22px;
+    bottom: 41.5px;
+    left:29px
 }
 
 .hide {
