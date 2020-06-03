@@ -8,7 +8,7 @@
     --whitetext: white;
     --shadow: 3px 3px 8px #525252;
 }
-
+/*OVERORDNET STYLING*/
 * {
     padding: 0;
     margin: 0;
@@ -56,7 +56,7 @@ p {
     src: url(../fonts/FiraSans-Bold.ttf);
 }
 
-/*GENERAL*/
+/*-----------------GENERAL----------------*/
 body {
     padding: 0;
     margin: 0;
@@ -119,7 +119,8 @@ body::-webkit-scrollbar-thumb {
             color-stop(1, var(--lightorange)));
 }
 
-/*ANIMATIONER*/
+/*-----------------------ANIMATIONER---------------*/
+/*Down arrow uendelig animation*/
 @keyframes blink {
     0% {
         transform: scale(1);
@@ -156,7 +157,7 @@ body::-webkit-scrollbar-thumb {
         bottom: 180px;
     }
 }
-
+/*Knap animation*/
 @keyframes buttonani {
     0% {
         transform: rotate(0.01turn)
@@ -175,6 +176,7 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
+/*Fade animation til kunderne siger*/
 @keyframes fade1 {
 
     0%,
@@ -233,6 +235,7 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
+/*Spin animation til loaderen med stikket som kommer som :after ved selve loaderen*/
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -244,7 +247,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-/*NAVIGATION*/
+/*-------------------NAVIGATION-------------------*/
 nav {
     height: 70px;
     background: linear-gradient(var(--lightblue), var(--darkestblue));
@@ -455,13 +458,12 @@ footer ul {
     font-size: 20px;
 }
 
-.mail img,
-.telefon img {
+.mail img, .telefon img {
     margin-right: 25px;
     width: 20px;
 }
 
-/*LOADER*/
+/*----------------LOADER-----------*/
 #loader {
     position: fixed;
     left: 0px;
@@ -492,6 +494,7 @@ footer ul {
     left: 0;
 }
 
+/*SÆTTER STIKKET PÅ SPINNEREN*/
 .spinner:after {
     content: "";
     position: absolute;
@@ -511,7 +514,7 @@ footer ul {
     transition: visibility 0s 0.4s, opacity 0.4s linear;
 }
 
-/*FORSIDE*/
+/*-------------FORSIDE---------------*/
 #landingpage {
     height: 40vh;
     min-height: 270px;
@@ -520,7 +523,7 @@ footer ul {
     background: linear-gradient(var(--lightblue), var(--darkblue));
     padding-top: 70px;
 }
-
+/*vises først på dekstop*/
 #giantlogo {
     display: none;
 }
@@ -530,7 +533,7 @@ footer ul {
     width: 100%;
     text-align: center;
 }
-
+/*call to action*/
 .cta_container {
     display: flex;
     margin: auto;
@@ -560,6 +563,7 @@ footer ul {
     transform: scale(1.2);
 }
 
+/*UX arrow down med animation beskrevet længere oppe*/
 .arrowdown {
     position: relative;
     display: flex;
@@ -589,7 +593,7 @@ footer ul {
     display: flex;
     justify-content: center;
 }
-
+/*her begynder de orange linjer, som er unikke for hver linje, hvorfor der er en del kode*/
 .rightbottomline {
     border-right: 3px var(--lightorange) solid;
     border-bottom: 3px var(--lightorange) solid;
@@ -682,6 +686,7 @@ footer ul {
     padding-right: 20px;
 }
 
+/*om os forside*/
 #aboutus {
     width: 100%;
     margin-top: 100px;
@@ -721,8 +726,7 @@ footer ul {
     padding-bottom: 15px;
 }
 
-#aboutusinner h3,
-#aboutusinner h4 {
+#aboutusinner h3, #aboutusinner h4 {
     color: var(--lightorange);
 }
 
@@ -807,6 +811,7 @@ footer ul {
     padding-top: 60px;
 }
 
+/*kontakt forside*/
 #contactfrontpage {
     width: 90%;
     margin: auto;
@@ -823,6 +828,7 @@ footer ul {
     width: 50%;
 }
 
+/*ændrer list-ikonerne*/
 #contactfrontpage ul {
     list-style-image: url('../images/swoosh_small.png');
     list-style-position: inside;
@@ -844,6 +850,7 @@ footer ul {
     position: relative;
 }
 
+/*stik sat på en orange ledning*/
 #contactfrontpage #rightline::after {
     content: url('');
     position: absolute;
@@ -857,7 +864,7 @@ footer ul {
     right: -10.45px;
 }
 
-/*TESTIMONIAL SLIDER*/
+/*TESTIMONIAL SLIDER MED REN HTML OG CSS*/
 .testimonial-slider {
     display: block;
     width: 90%;
@@ -885,6 +892,7 @@ footer ul {
     opacity: 0;
 }
 
+/*skifter med animationer - at se alle opslag tager altså 25sekunder*/
 .testimonial-slider ul.cssslider li:nth-child(1) {
     opacity: 1;
     animation: fade1 25s infinite;
@@ -928,7 +936,7 @@ footer ul {
     margin: auto;
 }
 
-/*OM-SIDEN*/
+/*----------------OM-SIDEN--------------------*/
 #aboutpage {
     display: flex;
     flex-direction: column;
@@ -1008,6 +1016,8 @@ footer ul {
     margin: auto;
 }
 
+
+/*kompetencekassen i midten - med :after-pseudo for at lave stikkontakteffekten*/
 #kompetencecontainer {
     width: 300px;
     height: 500px;
@@ -1224,7 +1234,8 @@ footer ul {
     top: 345px;
     text-align: right;
 }
-
+/*enkeltstånde ændring, for at det kan få optimal størrelse i desktop, men som lige
+nøjagtig ikke fungerede i den anden*/
 @media (min-width: 1275px) {
     .specs {
         width: 240px;
@@ -1246,7 +1257,9 @@ footer ul {
 }
 
 
-/*KONTAKT*/
+/*----------------KONTAKT---------------*/
+/*lavet som standart, så HTML-koden kan indsættes på de sider det er
+nødvendigt og efterfølgende virker den responsivt på alle sider*/
 .contact {
     width: 90%;
     margin: auto;
@@ -1312,7 +1325,7 @@ footer ul {
     margin-top: 50px;
 }
 
-/*-------------Service page mobile---------------*/
+/*-------------SERVICE SITE---------------*/
 .servicebox1 {
     display: flex;
     flex-direction: row;
@@ -1389,7 +1402,7 @@ footer ul {
     width: 100%;
 }
 
-/* Slideshow containeren */
+/* Slideshow containeren - ydelser*/
 .slideshow-container {
     margin-top: 10%;
     position: relative;
@@ -1404,7 +1417,7 @@ footer ul {
     background-color: white;
 }
 
-/* næst og tilbage knap */
+/* næste og tilbage knap */
 .prev,
 .next {
     cursor: pointer;
@@ -1420,7 +1433,7 @@ footer ul {
     user-select: none;
 }
 
-/* next knappen til højre */
+/* næste rykkes knappen til højre */
 .next {
     position: absolute;
     right: 0;
@@ -1691,7 +1704,7 @@ footer ul {
     margin-top: 2%;
 }
 
-/*-----byg computer side---*/
+/*---------------BYG COMPUTER SIDE - OBS: KUN BILLEDE HER---------------*/
 .buildpage img {
     width: 80%;
     height: auto;
@@ -1703,7 +1716,7 @@ footer ul {
     margin-top: 2%;
 }
 
-/*----------------BLOG----------*/
+/*----------------BLOG----------------*/
 #bloghero {
     width: 100%;
     height: 50vh;
@@ -1714,8 +1727,7 @@ footer ul {
     min-height: 230px;
 }
 
-#bloghero h2,
-#bloghero p {
+#bloghero h2, #bloghero p {
     position: absolute;
     width: 100%;
     color: white;
@@ -1733,6 +1745,8 @@ footer ul {
     top: 73px;
 }
 
+/*de mindste telefoner skulle have anden styling, og derfor denne som 
+ændrer allerede ved 400px og ikke først tablet størrelse*/
 @media (min-width: 400px) {
     #bloghero h2::after {
         top: 53px
@@ -1814,7 +1828,9 @@ footer ul {
 }
 
 
-/*--------------TABLET---------------------*/
+/*--------!!!!!!!!---------TABLET---------!!!!!!!!1------------*/
+/*som udgangspunkt skal tabletversionen ligne mobil - enkelte ændringer
+indtastes her*/
 @media (min-width: 600px) {
     .desktopservicebox {
         position: absolute;
@@ -1825,7 +1841,7 @@ footer ul {
 
 
 
-/*---------------DESKTOP-----------------*/
+/*---!!!!!!!------------DESKTOP-------!!!!!!!!----------*/
 @media (min-width: 1024px) {
 
     /*FONTE DESKTOP*/
@@ -1854,7 +1870,7 @@ footer ul {
     }
 
 
-    /*DESKTOP NAV*/
+    /*------------DESKTOP NAV--------------*/
     nav {
         height: 100px;
     }
@@ -1899,6 +1915,7 @@ footer ul {
         background: linear-gradient(var(--lightblue), var(--darkestblue));
     }
 
+    /*for at nav virker på selv kæmpe enheder*/
     @media (min-width: 3000px) {
         nav::before {
             left: 32%;
@@ -1939,7 +1956,7 @@ footer ul {
         color: white;
     }
 
-    /*GENERAL DESKTOP*/
+    /*--------------GENERAL DESKTOP-------------*/
     .onlymobile {
         display: none;
     }
@@ -1948,7 +1965,7 @@ footer ul {
         display: block;
     }
 
-    /*FORSIDE DESKTOP*/
+    /*--------------FORSIDE DESKTOP--------------*/
     #landingpage {
         height: calc(97.9vh - 150px);
         min-height: 600px;
@@ -2172,10 +2189,9 @@ footer ul {
         opacity: 0.1;
     }
 
-    /*-------service desktop---------*/
+    /*-------SERVICE/YDELSER DESKTOP---------*/
     .overkasse {
         flex-direction: row;
-
     }
 
     .desktopservicebox {
@@ -2184,8 +2200,6 @@ footer ul {
         left: 0;
         background-color: var(--white);
         z-index: 500;
-
-
     }
 
     .desktopservicebox h2 {
@@ -2205,7 +2219,7 @@ footer ul {
         font-size: 2em;
     }
 
-    /** ydelse**/
+    /*vælg privat eller erhverv*/
     #option {
         display: flex;
         flex-direction: column;
@@ -2230,7 +2244,7 @@ footer ul {
         margin-top: 5%;
     }
 
-    /* service veiw*/
+    /*ydelser view*/
     .customslider {
         width: 90%;
         margin: auto;
@@ -2312,7 +2326,7 @@ footer ul {
         text-align: center;
     }
 
-    /***displaynoneview*/
+    /*display none/view*/
     .Appleprodukt,
     .Alarm,
     .El,
@@ -2367,7 +2381,7 @@ footer ul {
     }
 
 
-    /**** buttons*/
+    /* ydelser buttons*/
     .orangebuttonydelse {
         font-size: 1.1em;
         padding: 15px 10px 15px 10px;
@@ -2528,7 +2542,8 @@ footer ul {
         flex-direction: row;
     }
 
-    /*KONTAKT DESKTOP*/
+    /*---------------KONTAKT DESKTOP----------------*/
+    /*irker på alle sider der har kotaktformularen og laver den responsiv*/
     .contact .contact_form_box form {
         flex-direction: row;
         flex-wrap: wrap;
@@ -2558,13 +2573,14 @@ footer ul {
     }
 
 
-    /*DESKTOP BLOG*/
+    /*----------------DESKTOP BLOG------------------*/
     #post_container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
 
+    /*Ændrer så der kan være tre i en række i flexboxen*/
     #post_container article {
         width: 30%;
         height: auto;
@@ -2586,7 +2602,7 @@ footer ul {
     }
 
 
-    /*ABOTU DESKTOP*/
+    /*--------------ABOUT DESKTOP--------------*/
     #aboutpage {
         flex-direction: row;
         justify-content: center;
