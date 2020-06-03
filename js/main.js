@@ -20,14 +20,13 @@ function showLoader(show) {
 //posts skal være et tomt array
 let posts = [];
 
-// Fetch alle post-indlæg
+// Fetch alle post-indlæg - kør appendPosts og loader
 function getPosts() {
   fetch("http://anderskunnerup.dk/wordpress/wp-json/wp/v2/posts?per_page=100")
     .then(function (response) {
       return response.json();
     })
     .then(function (json) {
-      console.log(json);
       appendPosts(json);
       posts = json;
       setTimeout(function () {
@@ -38,7 +37,7 @@ function getPosts() {
 
 getPosts();
 
-// Her tilføjes blogindlægene til DOM'en
+// Her tilføjes blogindlægene til DOM'en med backstick-string via querySelector
 function appendPosts(posts) {
   let postContainer = "";
 
@@ -97,7 +96,7 @@ function appendCategories(categories) {
   document.querySelector('#select-category').innerHTML += byCategoryHtml;
 }
 
-//Valgte kategori fetcher blogindlæg ind i valgte
+//Valgte kategori fetcher blogindlæg ind i valgte. Viser loader indtil indlæst og skiver hvis man ikke vælger kategori
 function categorySelected(categoryId) {
   console.log(`Category ID: ${categoryId}`);
   if (categoryId) {
@@ -143,11 +142,13 @@ function appendPostsByCategory(postsByCategory) {
 
 
 
-//costumslider service page
+//costumslider service page, inspiration fra w3-schools
 
+//slideindex 1 vises
 let slideIndex = 1;
 showSlides(slideIndex);
 
+//plus funktionen
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
@@ -156,10 +157,12 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+//Funktionen sætter slideindex til at være 1, hvilket er det der vises
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
+  //if statements definerer hvilket der skal vises
   if (n > slides.length) {
     slideIndex = 1
   }
@@ -177,7 +180,7 @@ function showSlides(n) {
 }
 
 
-// popup
+// popups
 
 function modalAlarm() {
   let alarms = document.querySelector("#alarmogsikkerhed");
@@ -199,6 +202,7 @@ function modalApple() {
   apple.style.display = "block";
 }
 
+//Lukker alle popups smart
 function closeinfo() {
   document.getElementById("ittv").style.display = "none";
   document.getElementById("apple").style.display = "none";
@@ -219,6 +223,8 @@ let elline = document.querySelector("#elline");
 let buildline = document.querySelector("#buildline");
 let alarmline = document.querySelector("#alarmline");
 
+
+//SKJULER elementer og fjerner "active"-border
 function closeInformation() {
   it.style.display = "none";
   apple.style.display = "none";
@@ -231,7 +237,7 @@ function closeInformation() {
   buildline.style.borderBottom = "none";
   appleline.style.borderBottom = "none";
 }
-
+//Minimenu open og "active"-border
 function openIt() {
   closeInformation();
   it.style.display = "flex";
