@@ -22,7 +22,7 @@ let posts = [];
 
 // Fetch alle post-indlæg - kør appendPosts og loader
 function getPosts() {
-  fetch("http://anderskunnerup.dk/wordpress/wp-json/wp/v2/posts?per_page=100")
+  fetch("https://anderskunnerup.dk/wordpress/wp-json/wp/v2/posts?per_page=100")
     .then(function (response) {
       return response.json();
     })
@@ -72,7 +72,7 @@ function search(value) {
 
 // FETCHER DE FORSKELLIGE KATEGORIER FRA BLOGGEN
 function getCategories() {
-  fetch('http://anderskunnerup.dk/wordpress/wp-json/wp/v2/categories')
+  fetch('https://anderskunnerup.dk/wordpress/wp-json/wp/v2/categories')
     .then(function (response) {
       return response.json();
     })
@@ -101,7 +101,7 @@ function categorySelected(categoryId) {
   console.log(`Category ID: ${categoryId}`);
   if (categoryId) {
     showLoader(true);
-    fetch(`http://anderskunnerup.dk/wordpress/wp-json/wp/v2/posts?_embed&categories=${categoryId}`)
+    fetch(`https://anderskunnerup.dk/wordpress/wp-json/wp/v2/posts?_embed&categories=${categoryId}`)
       .then(function (response) {
         return response.json();
       })
