@@ -1795,6 +1795,24 @@ nødvendigt og efterfølgende virker den responsivt på alle sider*/
     height: auto;
     white-space: pre-wrap;
 }
+#post_container .time{
+    position: relative;
+    text-align: center;
+    margin-top: -30px;
+    font-size: 16px;
+}
+
+#post_container .time:before{
+content: "";
+position: absolute;
+width: 50px;
+height: 5px;
+background-color: var(--lightorange);
+top: -7px;
+right: 50%;
+left: 50%;
+transform: translate(-50%);
+}
 
 #post_container img {
     width: 100%;
@@ -2585,6 +2603,12 @@ indtastes her*/
     #post_container article {
         width: 30%;
         height: auto;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    #post_container article::-webkit-scrollbar {
+    display: none;
     }
 
     #bloghero h2::after {

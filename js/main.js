@@ -46,6 +46,7 @@ function appendPosts(posts) {
       <article>
       <img src="${post.acf.img}" alt="Blog picture">
         <h2>${post.title.rendered}</h2>
+        <p class="time">${post.date}</p>
         <p>${post.acf.first_part_text}</p>  
         <p>${post.acf.second_part_text}</p>  
       </article>
