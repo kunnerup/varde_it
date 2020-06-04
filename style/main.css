@@ -1793,6 +1793,7 @@ nødvendigt og efterfølgende virker den responsivt på alle sider*/
     box-shadow: var(--shadow);
     margin-bottom: 40px;
     height: auto;
+    white-space: pre-wrap;
 }
 
 #post_container img {
