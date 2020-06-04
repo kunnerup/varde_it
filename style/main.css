@@ -1795,6 +1795,8 @@ nødvendigt og efterfølgende virker den responsivt på alle sider*/
     height: auto;
     white-space: pre-wrap;
 }
+
+}
 #post_container .time{
     position: relative;
     text-align: center;
@@ -2602,7 +2604,7 @@ indtastes her*/
     /*Ændrer så der kan være tre i en række i flexboxen*/
     #post_container article {
         width: 30%;
-        height: auto;
+        max-height: 700px;
         overflow: hidden;
         overflow-y: scroll;
     }

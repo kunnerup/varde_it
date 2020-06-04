@@ -49,6 +49,8 @@ function appendPosts(posts) {
         <p class="time">${post.date}</p>
         <p>${post.acf.first_part_text}</p>  
         <p>${post.acf.second_part_text}</p>  
+        <p>${post.acf.third_part_text}</p>
+        <p>${post.acf.fourth_part_text}</p>
       </article>
     `;
   }
@@ -126,7 +128,11 @@ function appendPostsByCategory(postsByCategory) {
     <article onclick="showDetailView(post)">
     <img src="${post.acf.img}" alt="Blog picture">
       <h2>${post.title.rendered}</h2>
-      <p>${post.acf.first_part_text}</p>  
+      <p class="time">${post.date}</p>
+      <p>${post.acf.first_part_text}</p>
+      <p>${post.acf.second_part_text}</p>  
+      <p>${post.acf.third_part_text}</p>
+      <p>${post.acf.fourth_part_text}</p>  
     </article>
     `;
   }
